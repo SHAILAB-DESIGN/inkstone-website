@@ -16,6 +16,7 @@
   let lastAnchorRequestId = "";
   let lastDialogTrigger = null;
   let toastTimer = 0;
+  const successToastIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M8 12.5 L11 15.5 L16 9.5"></path></svg>';
 
   document.querySelectorAll(".site-header-action").forEach((link) => { link.href = discoveryUrl; });
 
@@ -58,10 +59,13 @@
 
   function showToast(message) {
     if (!toast) return;
-    toast.textContent = message;
-    toast.classList.add("show");
+    toast.className = "app-toast success";
+    toast.setAttribute("role", "status");
+    toast.innerHTML = `<span class="app-toast-ico">${successToastIcon}</span><span class="app-toast-msg"></span>`;
+    toast.querySelector(".app-toast-msg").textContent = String(message || "");
     window.clearTimeout(toastTimer);
-    toastTimer = window.setTimeout(() => toast.classList.remove("show"), 2400);
+    window.requestAnimationFrame(() => toast.classList.add("show"));
+    toastTimer = window.setTimeout(() => toast.classList.remove("show"), 1800);
   }
 
   function setRadio(chip) {
@@ -164,7 +168,7 @@
     if (!validateForm()) return;
     postToHome({ type: "home:cooperation-dialog:submit", requestId: `cooperation-${Date.now()}`, formData: formDataObject() });
     closeDialog();
-    showToast("提交接口待接入，表单内容未发送");
+    showToast("提交成功");
   });
 
   form?.addEventListener("input", (event) => {

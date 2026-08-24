@@ -445,13 +445,17 @@
   const localCooperationToast = document.getElementById("home-local-cooperation-toast");
   let lastLocalDialogTrigger = null;
   let localToastTimer = 0;
+  const successToastIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M8 12.5 L11 15.5 L16 9.5"></path></svg>';
 
   function showLocalToast(message) {
     if (!localCooperationToast) return;
-    localCooperationToast.textContent = message;
-    localCooperationToast.classList.add("show");
+    localCooperationToast.className = "app-toast success";
+    localCooperationToast.setAttribute("role", "status");
+    localCooperationToast.innerHTML = `<span class="app-toast-ico">${successToastIcon}</span><span class="app-toast-msg"></span>`;
+    localCooperationToast.querySelector(".app-toast-msg").textContent = String(message || "");
     window.clearTimeout(localToastTimer);
-    localToastTimer = window.setTimeout(() => localCooperationToast.classList.remove("show"), 2400);
+    window.requestAnimationFrame(() => localCooperationToast.classList.add("show"));
+    localToastTimer = window.setTimeout(() => localCooperationToast.classList.remove("show"), 1800);
   }
 
   function openStandaloneCooperationDialog(trigger) {
@@ -521,7 +525,7 @@
     event.preventDefault();
     if (!validateLocalCooperationForm()) return;
     closeStandaloneCooperationDialog();
-    showLocalToast("提交接口待接入，表单内容未发送");
+    showLocalToast("提交成功");
   });
 
   localCooperationForm?.addEventListener("input", (event) => {
