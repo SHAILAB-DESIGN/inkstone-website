@@ -1,0 +1,3609 @@
+{
+  "schemaVersion": 1,
+  "figmaFileKey": "ZaggbS0TYv1ljbBzqEwc7h",
+  "rootNodeId": "198:27482",
+  "checkedAt": "2026-08-24T00:00:00.0000000Z",
+  "assetCount": 221,
+  "figmaExportCount": 211,
+  "userProvidedAssetCount": 10,
+  "sourceResolutionSummary": {
+    "exactFileNode": 22,
+    "contextContainer": 116,
+    "evidenceStateContainer": 73,
+    "userProvidedFile": 10,
+    "rootFallback": 0
+  },
+  "evidenceChainStates": [
+    {
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1204",
+      "stateKey": "chain01",
+      "tabLabel": "文献综述及引用网络",
+      "outerNodeId": "168:938",
+      "innerNodeId": "221:2138",
+      "outerNaturalSize": {
+        "width": 960,
+        "height": 480
+      },
+      "innerNaturalBounds": {
+        "x": 80,
+        "y": 0,
+        "width": 800,
+        "height": 480
+      },
+      "runtimeRepresentation": "html-css-svg-fragments"
+    },
+    {
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1205",
+      "stateKey": "chain02",
+      "tabLabel": "数据统计结果",
+      "outerNodeId": "168:896",
+      "innerNodeId": "221:2805",
+      "outerNaturalSize": {
+        "width": 960,
+        "height": 480
+      },
+      "innerNaturalBounds": {
+        "x": 80,
+        "y": 0,
+        "width": 800,
+        "height": 480
+      },
+      "runtimeRepresentation": "html-css-svg-fragments"
+    },
+    {
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1317",
+      "stateKey": "chain03",
+      "tabLabel": "论文插图",
+      "outerNodeId": "168:1296",
+      "innerNodeId": "226:3362",
+      "outerNaturalSize": {
+        "width": 960,
+        "height": 480
+      },
+      "innerNaturalBounds": {
+        "x": 80,
+        "y": 0,
+        "width": 800,
+        "height": 480
+      },
+      "runtimeRepresentation": "html-css-svg-fragments"
+    },
+    {
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1207",
+      "stateKey": "chain04",
+      "tabLabel": "分析代码",
+      "outerNodeId": "168:1015",
+      "innerNodeId": "226:4390",
+      "outerNaturalSize": {
+        "width": 960,
+        "height": 480
+      },
+      "innerNaturalBounds": {
+        "x": 80,
+        "y": 0,
+        "width": 800,
+        "height": 480
+      },
+      "runtimeRepresentation": "html-css-svg-fragments"
+    },
+    {
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1208",
+      "stateKey": "chain05",
+      "tabLabel": "仿真结果",
+      "outerNodeId": "168:1057",
+      "innerNodeId": "226:4487",
+      "outerNaturalSize": {
+        "width": 960,
+        "height": 480
+      },
+      "innerNaturalBounds": {
+        "x": 80,
+        "y": 0,
+        "width": 800,
+        "height": 480
+      },
+      "runtimeRepresentation": "html-css-svg-fragments"
+    },
+    {
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1209",
+      "stateKey": "chain06",
+      "tabLabel": "实验设计",
+      "outerNodeId": "168:1073",
+      "innerNodeId": "226:4769",
+      "outerNaturalSize": {
+        "width": 960,
+        "height": 480
+      },
+      "innerNaturalBounds": {
+        "x": 80,
+        "y": 0,
+        "width": 800,
+        "height": 480
+      },
+      "runtimeRepresentation": "html-css-svg-fragments"
+    },
+    {
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1246",
+      "stateKey": "chain07",
+      "tabLabel": "论文草稿 / 技术报告",
+      "outerNodeId": "168:1175",
+      "innerNodeId": "226:4965",
+      "outerNaturalSize": {
+        "width": 960,
+        "height": 480
+      },
+      "innerNaturalBounds": {
+        "x": 80,
+        "y": 0,
+        "width": 800,
+        "height": 480
+      },
+      "runtimeRepresentation": "html-css-svg-fragments"
+    }
+  ],
+  "assets": [
+    {
+      "nodeId": "198:35635",
+      "layerName": "research-foundation-capabilities",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 24.0,
+        "height": 24.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/capabilities/frame.svg",
+      "bytes": 663,
+      "sha256": "b2450b1d23e4708d4a3682c10345698217d7fc1f84a0323a749573983e15a1b9"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 24.0,
+        "height": 24.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/apple-intelligence-icon.svg",
+      "bytes": 2167,
+      "sha256": "54ffd252d7d8ae14886703faf0d3adfa030cd301172aa1c3a1a83b9dbab371af"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 780,
+        "height": 780
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/avatar-ec.png",
+      "bytes": 160966,
+      "sha256": "54ea755ab58f4022d40fee39f215863cb71113b0ea3167d6fa5cff9b4168c98a"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 24.0,
+        "height": 24.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/brain1.svg",
+      "bytes": 1434,
+      "sha256": "6b8ce5420e562510b90a593e57d4bb14b2f01aa0ff2e293fe42964e196929765"
+    },
+    {
+      "nodeId": "314:3303",
+      "layerName": "discipline-card-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 36,
+        "height": 36
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/cards/org-app-amix.png",
+      "bytes": 3646,
+      "sha256": "db9d769a0075b10d3a8515912a0a6889663b9663bda50d1ea43f06a31f7706c5"
+    },
+    {
+      "nodeId": "314:3303",
+      "layerName": "discipline-card-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 36,
+        "height": 36
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/cards/org-app-earthlink.png",
+      "bytes": 2363,
+      "sha256": "14a6ee1117cc1b6a3e79e912e132eac270b8480a825ec58560bfe8502b97ed3c"
+    },
+    {
+      "nodeId": "314:3303",
+      "layerName": "discipline-card-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 36,
+        "height": 36
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/cards/org-app-migo-chem.png",
+      "bytes": 2363,
+      "sha256": "14a6ee1117cc1b6a3e79e912e132eac270b8480a825ec58560bfe8502b97ed3c"
+    },
+    {
+      "nodeId": "314:3303",
+      "layerName": "discipline-card-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1080,
+        "height": 290
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/cards/org-app-origene.png",
+      "bytes": 60824,
+      "sha256": "abcec9ed1ffd1c230c110e6e1a87681151eb4baa55b19526646c6eb494cf36c2"
+    },
+    {
+      "nodeId": "314:3303",
+      "layerName": "discipline-card-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 36,
+        "height": 36
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/cards/org-app-sciverse.png",
+      "bytes": 2363,
+      "sha256": "14a6ee1117cc1b6a3e79e912e132eac270b8480a825ec58560bfe8502b97ed3c"
+    },
+    {
+      "nodeId": "314:3303",
+      "layerName": "discipline-card-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 36,
+        "height": 36
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/cards/org-app-venuspod.png",
+      "bytes": 3547,
+      "sha256": "5b6f73e885cada8a5fd461e2dd5bb1def45972d58e34582767c616c9600ba54f"
+    },
+    {
+      "nodeId": "314:3303",
+      "layerName": "discipline-card-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 780,
+        "height": 780
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/cards/org-data-ai-lab.png",
+      "bytes": 160966,
+      "sha256": "54ea755ab58f4022d40fee39f215863cb71113b0ea3167d6fa5cff9b4168c98a"
+    },
+    {
+      "nodeId": "314:3303",
+      "layerName": "discipline-card-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 780,
+        "height": 780
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/cards/org-tool-atmospheric.png",
+      "bytes": 160966,
+      "sha256": "54ea755ab58f4022d40fee39f215863cb71113b0ea3167d6fa5cff9b4168c98a"
+    },
+    {
+      "nodeId": "314:3303",
+      "layerName": "discipline-card-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 36,
+        "height": 36
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/cards/org-tool-drugsda.png",
+      "bytes": 2941,
+      "sha256": "b8f6eaf767efafeb7385604e49efb812c2060c98f78d3f28a9da06af304f1141"
+    },
+    {
+      "nodeId": "314:3303",
+      "layerName": "discipline-card-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 36,
+        "height": 36
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/cards/org-tool-gwas.png",
+      "bytes": 2618,
+      "sha256": "380104febbc13a270a10e959b322829424465be3b08e8ab9188167410984f060"
+    },
+    {
+      "nodeId": "314:3303",
+      "layerName": "discipline-card-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 780,
+        "height": 780
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/cards/org-tool-multiomics.png",
+      "bytes": 160966,
+      "sha256": "54ea755ab58f4022d40fee39f215863cb71113b0ea3167d6fa5cff9b4168c98a"
+    },
+    {
+      "nodeId": "314:3303",
+      "layerName": "discipline-card-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 780,
+        "height": 780
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/cards/org-tool-nuwa.png",
+      "bytes": 160966,
+      "sha256": "54ea755ab58f4022d40fee39f215863cb71113b0ea3167d6fa5cff9b4168c98a"
+    },
+    {
+      "nodeId": "314:3303",
+      "layerName": "discipline-card-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1280,
+        "height": 1280
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/cards/org-tool-scigraph.png",
+      "bytes": 161709,
+      "sha256": "82563e1f5d273d52fc0dba138617a4d84feae5a12644ad937f07d5ca5e721bda"
+    },
+    {
+      "nodeId": "314:3303",
+      "layerName": "discipline-card-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 38.0,
+        "height": 38.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/cards/tool-atmospheric.svg",
+      "bytes": 853,
+      "sha256": "b6c99d1a54785298b0042e4a9092a4c61525ca0e21507399efedb58a97cf1725"
+    },
+    {
+      "nodeId": "314:3303",
+      "layerName": "discipline-card-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 38.0,
+        "height": 38.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/cards/tool-drugsda.svg",
+      "bytes": 998,
+      "sha256": "c06917007064c86859247d2b6c88f29064d54760b9881674652c29069e541b71"
+    },
+    {
+      "nodeId": "314:3303",
+      "layerName": "discipline-card-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 38.0,
+        "height": 38.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/cards/tool-gwas.svg",
+      "bytes": 533,
+      "sha256": "f350df82bdc18d79d9e4623f78f1b899c368597b82e497aace17c3f7ea982479"
+    },
+    {
+      "nodeId": "314:3303",
+      "layerName": "discipline-card-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 38.0,
+        "height": 38.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/cards/tool-multiomics.svg",
+      "bytes": 998,
+      "sha256": "bf25aa155f58b6449e26e3b70cd2df6e15156830a7ea24815f4033844cf6f514"
+    },
+    {
+      "nodeId": "314:3303",
+      "layerName": "discipline-card-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 38.0,
+        "height": 38.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/cards/tool-nuwa.svg",
+      "bytes": 788,
+      "sha256": "d7f658064892c8077e257b0bbe7a5e50a3df0c9f34570575ff9b354fd44e054b"
+    },
+    {
+      "nodeId": "314:3303",
+      "layerName": "discipline-card-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 38.0,
+        "height": 38.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/cards/tool-scigraph.svg",
+      "bytes": 864,
+      "sha256": "a3f6a687fcdbf14c75c0aa5a6226499a005864b76618c6fbf0725058787d50c6"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 89.8374,
+        "height": 89.8374
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/cover-radial-highlight.svg",
+      "bytes": 567,
+      "sha256": "ba789af30a331cbbb08a7108edf274f761497abe32c6bf1274b053e7404d77ec"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 182.285,
+        "height": 0.438186
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/dashed-divider.svg",
+      "bytes": 334,
+      "sha256": "29f177ce099fb2af3987a999c01bb57a53f07b5f365b155f105f0ce0953d99c3"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 13.3203,
+        "height": 13.3203
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/database.svg",
+      "bytes": 971,
+      "sha256": "69551f079a29735ad5ece50332a0f8407c35f63f0e60ba10b00e297180a87ab0"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 13.3203,
+        "height": 13.3203
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/database1.svg",
+      "bytes": 955,
+      "sha256": "23bde77a395b04118ad93f59aecaaa8da8f8be233cbc04e55b3d09b742ffc6f4"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 171.875,
+        "height": 0.429688
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/divider.svg",
+      "bytes": 327,
+      "sha256": "fe579a07ae631b93088f17f1ce464b75c41486358a933b339c71d785b75f52f8"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 272.852,
+        "height": 0.429688
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/divider1.svg",
+      "bytes": 327,
+      "sha256": "b18d378b449972dce23ba1c7ad5a19330a5835a2b51bd22fe68a9756238c588e"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 24.0,
+        "height": 24.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/earth.svg",
+      "bytes": 1197,
+      "sha256": "8427dcf3b0b97382282faec38172e3231de065d52b9b4793c096a2a8672797cb"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 200.0,
+        "height": 200.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/ellipse7689.svg",
+      "bytes": 260,
+      "sha256": "17637d80beb283ea9548c4622e11a3535d137ba8dcf769826a48f79fd21c0d38"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 321.0,
+        "height": 321.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/ellipse7690.svg",
+      "bytes": 289,
+      "sha256": "04ce28a77a622f87d563b75a2f737e10e1190c03f24b3395bb101ec1883376b8"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 145.854,
+        "height": 0.528455
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/footer-dashed-divider.svg",
+      "bytes": 487,
+      "sha256": "6965715dc8080e1acce1f0f304b4c992cebfb22eae1998f87e4e9ffe6ad9f7cb"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 24.0,
+        "height": 24.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/form-hexagon.svg",
+      "bytes": 890,
+      "sha256": "fe318572b311e0cbe7bdf037f5e7bf13d6d1f3ae9b4183fe2f2685d187def6f7"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 110.0,
+        "height": 770.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/frame2147237055.svg",
+      "bytes": 499,
+      "sha256": "4679e081d91d4faee40aed0ba07e3dbea5a84912a00321bbfce57f4e01973ef6"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 130.0,
+        "height": 770.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/frame2147237056.svg",
+      "bytes": 499,
+      "sha256": "daf5b8bd8aca7f67b992d5942f6c2851ee99aa7b03c5ac864bd62f05eac51968"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 130.0,
+        "height": 770.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/frame2147237057.svg",
+      "bytes": 502,
+      "sha256": "c18fe0138591442bbe29a4b7fec48837f2846b0c368a6e3d19fa1a7f215b86c7"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 175.786,
+        "height": 40.9238
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/group.svg",
+      "bytes": 804,
+      "sha256": "fd4f6ec920fd5d7fdd5c518f4a7ba573c472b72f87dc8430a4c1b4b306b96c84"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 105.215,
+        "height": 62.7805
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/group1.svg",
+      "bytes": 718,
+      "sha256": "ac3f7a0db222189c5bc6c4a4f654dba3c6cc5b8bb841960cd3de66239852c560"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 24.0,
+        "height": 24.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/life-science.svg",
+      "bytes": 1452,
+      "sha256": "5dbca32939dd073ce502fe42aaf482571a21bf12ab1937835627090f4cc3921e"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1280,
+        "height": 1280
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/logo.png",
+      "bytes": 161709,
+      "sha256": "82563e1f5d273d52fc0dba138617a4d84feae5a12644ad937f07d5ca5e721bda"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 64,
+        "height": 64
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/logo1.png",
+      "bytes": 4834,
+      "sha256": "045f26b8816b43d3fc92abb542728baf653ff125100f892ee77f870eb67208f4"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 24.0,
+        "height": 24.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/math-basic.svg",
+      "bytes": 1339,
+      "sha256": "49af93d6dc13a22145e7425a55c240cda8966769533def50bbc3ca02f6416476"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 13.3203,
+        "height": 13.3203
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/multi-omics.svg",
+      "bytes": 1042,
+      "sha256": "0d4369b89f0ceed3945330aa3ffb51b8dd856eb8a6aa3768016d577ce6fea790"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16,
+        "height": 16
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/shanghai-jiao-tong-university-logo.png",
+      "bytes": 990,
+      "sha256": "f854086a1ef91db5d3187560ca93d1571acfff68f4ebb491c3bfb142f838e5ba"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16,
+        "height": 16
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/shanghai-jiao-tong-university-logo1.png",
+      "bytes": 862,
+      "sha256": "6b2e2c7591a099f00fa44922000dc935bfc004f339deca9d5bf821c3dd8c15bb"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16,
+        "height": 16
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/shanghai-jiao-tong-university-logo2.png",
+      "bytes": 995,
+      "sha256": "5c23bae51ff8b2fa66c496ed812f1b26686ad9a23d43fc6d882af14e8d184199"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 183.0,
+        "height": 53.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/vector32.svg",
+      "bytes": 390,
+      "sha256": "62fd5d610ecb0de2409d29e8f7ec9ca12492632e51ac718d8a90e576c5521189"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1.0,
+        "height": 49.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/vector33.svg",
+      "bytes": 308,
+      "sha256": "d9e22bb0e0cac4ad1fbc78fed090c30d83bd586f6a7605e0d935d049d531c281"
+    },
+    {
+      "nodeId": "210:53949",
+      "layerName": "image-six-subject",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 163.0,
+        "height": 53.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/disciplines/vector35.svg",
+      "bytes": 390,
+      "sha256": "deb77290c90d6a0b35127ef40aa144504fc0420a73b7f7e65c1216aca7e4ea21"
+    },
+    {
+      "nodeId": "242:63272",
+      "layerName": "download-card-icons",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 48.0,
+        "height": 48.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/downloads/apple.svg",
+      "bytes": 1129,
+      "sha256": "169e4569179c879fee2a6efa72e88614d0b771aa72991e57433407463eae248d"
+    },
+    {
+      "nodeId": "242:63272",
+      "layerName": "download-card-icons",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 48.0,
+        "height": 48.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/downloads/download.svg",
+      "bytes": 552,
+      "sha256": "a263f23cf3417a70233f9f88e3ef19d246194ff716311db97f73a7807f7914ed"
+    },
+    {
+      "nodeId": "242:63272",
+      "layerName": "download-card-icons",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 54.5359,
+        "height": 48.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/downloads/frame.svg",
+      "bytes": 2548,
+      "sha256": "9fde39b85abc8ac55f4f0c818860feba8aa05a1c4b2e524214a53e58a081a0ff"
+    },
+    {
+      "nodeId": "242:63272",
+      "layerName": "download-card-icons",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 48.0,
+        "height": 48.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/downloads/linux1.svg",
+      "bytes": 9196,
+      "sha256": "4f4273f4c96aefb1b3ba2343c4e78b596320c2ba20bc62803cfa653eb55d4773"
+    },
+    {
+      "nodeId": "242:63272",
+      "layerName": "download-card-icons",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 48.0,
+        "height": 48.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/downloads/ri-windows-fill1.svg",
+      "bytes": 432,
+      "sha256": "f92414fbf67d45c224d4d66c9f37b8e8d07fe3f68bf80b156e323045385b8d48"
+    },
+    {
+      "nodeId": "198:35502",
+      "layerName": "image-open-ecosystem",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 20.0,
+        "height": 20.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/ecosystem/frame.svg",
+      "bytes": 963,
+      "sha256": "bae89188e9858b6378a49d83335fda1195b53ff7e82fc44e9ed048d47b16263f"
+    },
+    {
+      "nodeId": "198:35502",
+      "layerName": "image-open-ecosystem",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 20.0,
+        "height": 20.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/ecosystem/frame1.svg",
+      "bytes": 1364,
+      "sha256": "d2fbc153c4a3da09eccdabd80f4a3107ce7b2562a6dd9a1aa97fb2d825c3754b"
+    },
+    {
+      "nodeId": "198:35502",
+      "layerName": "image-open-ecosystem",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 20.0,
+        "height": 20.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/ecosystem/frame2.svg",
+      "bytes": 823,
+      "sha256": "0bb5f762cfa6c53dce0311d610572f17d5042e971bbdbbfa8fd304933ef20df6"
+    },
+    {
+      "nodeId": "198:35502",
+      "layerName": "image-open-ecosystem",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 20.0,
+        "height": 20.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/ecosystem/frame3.svg",
+      "bytes": 645,
+      "sha256": "9d5b0024857a4a05fb2a843a3b02c5c2d3b328e818e46e51adb0b029a848ffc3"
+    },
+    {
+      "nodeId": "198:35502",
+      "layerName": "image-open-ecosystem",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 20.0,
+        "height": 20.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/ecosystem/frame4.svg",
+      "bytes": 780,
+      "sha256": "cce8d36987be6d1fd80f053cd064082e338eba1c4f314a20fc658f342a55fae4"
+    },
+    {
+      "nodeId": "198:35502",
+      "layerName": "image-open-ecosystem",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 20.0,
+        "height": 20.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/ecosystem/frame5.svg",
+      "bytes": 873,
+      "sha256": "04a5e347ddf319277fa57da310f21a0d67a0f072bcead0989e0910136d1ae434"
+    },
+    {
+      "nodeId": "198:35502",
+      "layerName": "image-open-ecosystem",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 401.0,
+        "height": 103.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/ecosystem/group2087329049.svg",
+      "bytes": 1458,
+      "sha256": "47a2c6ed96a3e2db48a3d5fd1ff173f1d0e29a6022a19268150cb2d17d247f71"
+    },
+    {
+      "nodeId": "198:35502",
+      "layerName": "image-open-ecosystem",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 123.775,
+        "height": 26.5053
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/ecosystem/group2087329051.svg",
+      "bytes": 6063,
+      "sha256": "696da40d875f3102065b40a70e2996aacd509dc394a655b3472fff086411ee7b"
+    },
+    {
+      "nodeId": "198:35502",
+      "layerName": "image-open-ecosystem",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 52.376,
+        "height": 52.3725
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/ecosystem/group2087329052.svg",
+      "bytes": 14145,
+      "sha256": "9ce980fe4c6f5c04f8db73cfe58c7a6ff5984dbfda840013dc623356c350d6dc"
+    },
+    {
+      "nodeId": "198:35502",
+      "layerName": "image-open-ecosystem",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 87.364,
+        "height": 29.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/ecosystem/group2087329053.svg",
+      "bytes": 11279,
+      "sha256": "efbb5ddcea8db1c804254a66f60618a09c4e030497b8e268641ea9a4d4226c8a"
+    },
+    {
+      "nodeId": "198:35502",
+      "layerName": "image-open-ecosystem",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 12.0,
+        "height": 12.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/ecosystem/text.svg",
+      "bytes": 952,
+      "sha256": "09746c4cd2979c2fe32632a4c071d60e25ef4d03025e1fac39a0fc1ff040c444"
+    },
+    {
+      "nodeId": "198:35502",
+      "layerName": "image-open-ecosystem",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 334.182,
+        "height": 81.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/ecosystem/vector32.svg",
+      "bytes": 17296,
+      "sha256": "d7a3008db6ed0901d1600bc5e3df2b9a6ede896eecf3ddccd96648eed79f4c6d"
+    },
+    {
+      "nodeId": "198:35502",
+      "layerName": "image-open-ecosystem",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 222.182,
+        "height": 81.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/ecosystem/vector33.svg",
+      "bytes": 13232,
+      "sha256": "a872acfda84c2c376865751749bd0a5020d8e01bd0d3181ef0177b9e80962b8c"
+    },
+    {
+      "nodeId": "198:35502",
+      "layerName": "image-open-ecosystem",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 110.182,
+        "height": 81.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/ecosystem/vector34.svg",
+      "bytes": 7541,
+      "sha256": "130c636af63214de36b0925bff8611a5c32b896720611a368227e51e2dca698a"
+    },
+    {
+      "nodeId": "198:35502",
+      "layerName": "image-open-ecosystem",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 10.182,
+        "height": 81.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/ecosystem/vector35.svg",
+      "bytes": 4353,
+      "sha256": "a34e9259f9135ddd6fe1385d410d8341b935855ede74931d28fdc1a58ce8c20e"
+    },
+    {
+      "nodeId": "198:35502",
+      "layerName": "image-open-ecosystem",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 122.182,
+        "height": 81.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/ecosystem/vector36.svg",
+      "bytes": 8306,
+      "sha256": "fb061d1013103a7c2631f17b392e909811c497bf1460085369355a6af2f2e0f7"
+    },
+    {
+      "nodeId": "198:35502",
+      "layerName": "image-open-ecosystem",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 276.182,
+        "height": 81.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/ecosystem/vector37.svg",
+      "bytes": 15108,
+      "sha256": "44b866d7d68dd9ba9a3c5a86a9240324872f9d29be568efd99ff82bbafab24ce"
+    },
+    {
+      "nodeId": "168:938",
+      "layerName": "image-chain01",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 14.0,
+        "height": 14.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain01/frame.svg",
+      "bytes": 964,
+      "sha256": "5f8bee66e80d44b0c795b435ce6aae567bb598ebf174076d546e03e96f924355",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1204",
+      "stateKey": "chain01",
+      "outerNodeId": "168:938",
+      "innerNodeId": "221:2138"
+    },
+    {
+      "nodeId": "168:938",
+      "layerName": "image-chain01",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 11.5938,
+        "height": 11.5938
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain01/group.svg",
+      "bytes": 1209,
+      "sha256": "c887c336bdf7c8d0be5362789cb6ade479a7b508575eaf0e8623962ad39d34dc",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1204",
+      "stateKey": "chain01",
+      "outerNodeId": "168:938",
+      "innerNodeId": "221:2138"
+    },
+    {
+      "nodeId": "168:938",
+      "layerName": "image-chain01",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 12.0,
+        "height": 12.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain01/text.svg",
+      "bytes": 952,
+      "sha256": "30bb026e8a621be22fbb43f115da502d8930e1f95db0f820db33fd4aa9ab5b42",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1204",
+      "stateKey": "chain01",
+      "outerNodeId": "168:938",
+      "innerNodeId": "221:2138"
+    },
+    {
+      "nodeId": "168:938",
+      "layerName": "image-chain01",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 7.36352,
+        "height": 79.3335
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain01/vector39.svg",
+      "bytes": 5991,
+      "sha256": "33ae34be04c7aecaa8c90e560f4253564059765b0de77b00afbce6cde978c90c",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1204",
+      "stateKey": "chain01",
+      "outerNodeId": "168:938",
+      "innerNodeId": "221:2138"
+    },
+    {
+      "nodeId": "168:938",
+      "layerName": "image-chain01",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 7.36377,
+        "height": 77.9392
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain01/vector40.svg",
+      "bytes": 5989,
+      "sha256": "020f4965c9dfc995061ee66a452163ffc7b550e871db4b6c951c49ceed863e3b",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1204",
+      "stateKey": "chain01",
+      "outerNodeId": "168:938",
+      "innerNodeId": "221:2138"
+    },
+    {
+      "nodeId": "168:938",
+      "layerName": "image-chain01",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 7.36367,
+        "height": 78.4626
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain01/vector41.svg",
+      "bytes": 5986,
+      "sha256": "0a11dae5c2acbf4a439f046d32530fd1ec4511b1ddfcebf2e851273e44f52b89",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1204",
+      "stateKey": "chain01",
+      "outerNodeId": "168:938",
+      "innerNodeId": "221:2138"
+    },
+    {
+      "nodeId": "168:938",
+      "layerName": "image-chain01",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 7.36187,
+        "height": 112.036
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain01/vector42.svg",
+      "bytes": 8357,
+      "sha256": "0554f7ef0af8f401f9d86e72e1533f7cce8f52900d5241d2db00eee690e49e2d",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1204",
+      "stateKey": "chain01",
+      "outerNodeId": "168:938",
+      "innerNodeId": "221:2138"
+    },
+    {
+      "nodeId": "168:938",
+      "layerName": "image-chain01",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 61.4567,
+        "height": 60.1998
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain01/vector43.svg",
+      "bytes": 6422,
+      "sha256": "bcec5829ccbfbb35c8d0e433256ba0bc08e7871a21273091444f3bbbb7fa2e14",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1204",
+      "stateKey": "chain01",
+      "outerNodeId": "168:938",
+      "innerNodeId": "221:2138"
+    },
+    {
+      "nodeId": "168:896",
+      "layerName": "image-chain02",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 40.0,
+        "height": 40.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain02/frame.svg",
+      "bytes": 1242,
+      "sha256": "422a2d26afe20007a7073c69d2818d4fa4273029adb72c15a2d02bac68c29943",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1205",
+      "stateKey": "chain02",
+      "outerNodeId": "168:896",
+      "innerNodeId": "221:2805"
+    },
+    {
+      "nodeId": "168:896",
+      "layerName": "image-chain02",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 40.0,
+        "height": 40.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain02/frame1.svg",
+      "bytes": 2021,
+      "sha256": "996d3438bbadbda648642aaba48093942e8c1ea9a2f1e0b8d2f22fc88f42e1d1",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1205",
+      "stateKey": "chain02",
+      "outerNodeId": "168:896",
+      "innerNodeId": "221:2805"
+    },
+    {
+      "nodeId": "168:896",
+      "layerName": "image-chain02",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 40.0,
+        "height": 40.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain02/frame2.svg",
+      "bytes": 920,
+      "sha256": "de89602ed56a36450a9523a0537e18ee83c810240ca6d38595b19ff5a67156a0",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1205",
+      "stateKey": "chain02",
+      "outerNodeId": "168:896",
+      "innerNodeId": "221:2805"
+    },
+    {
+      "nodeId": "168:896",
+      "layerName": "image-chain02",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 40.0,
+        "height": 40.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain02/frame3.svg",
+      "bytes": 940,
+      "sha256": "c4cd533723f500305fca21c70cfbc168cee6dc7b66414d9f0500afb8d472e882",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1205",
+      "stateKey": "chain02",
+      "outerNodeId": "168:896",
+      "innerNodeId": "221:2805"
+    },
+    {
+      "nodeId": "168:896",
+      "layerName": "image-chain02",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 128.065,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain02/icon.svg",
+      "bytes": 307,
+      "sha256": "38246fbf67ec5ef9c05c7406442dfd5466e62466dab616ffd0c2fbddacf0986c",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1205",
+      "stateKey": "chain02",
+      "outerNodeId": "168:896",
+      "innerNodeId": "221:2805"
+    },
+    {
+      "nodeId": "168:896",
+      "layerName": "image-chain02",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 148.065,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain02/icon1.svg",
+      "bytes": 307,
+      "sha256": "68fb7955b6f658e1427341a50297baca323f0f58384f4b13d22006659836c0c9",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1205",
+      "stateKey": "chain02",
+      "outerNodeId": "168:896",
+      "innerNodeId": "221:2805"
+    },
+    {
+      "nodeId": "168:896",
+      "layerName": "image-chain02",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 12.0,
+        "height": 12.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain02/text.svg",
+      "bytes": 952,
+      "sha256": "5d2562a3a66df987b83341cb27fc80f10faeedd6503c4dbcee9b437a42530420",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1205",
+      "stateKey": "chain02",
+      "outerNodeId": "168:896",
+      "innerNodeId": "221:2805"
+    },
+    {
+      "nodeId": "168:896",
+      "layerName": "image-chain02",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 5.93534,
+        "height": 10.8707
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain02/vector.svg",
+      "bytes": 318,
+      "sha256": "df234895526b0fedd93ed91a0b5abcd8abb77d3b939b478b92b1e9bc9ae45e1e",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1205",
+      "stateKey": "chain02",
+      "outerNodeId": "168:896",
+      "innerNodeId": "221:2805"
+    },
+    {
+      "nodeId": "168:1296",
+      "layerName": "image-chain03",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 40.0,
+        "height": 40.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain03/frame.svg",
+      "bytes": 1095,
+      "sha256": "bd33e78344e6740e06faa00a550991b44262fcb72a13b01ca4a8fc9e372de20a",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1317",
+      "stateKey": "chain03",
+      "outerNodeId": "168:1296",
+      "innerNodeId": "226:3362"
+    },
+    {
+      "nodeId": "168:1296",
+      "layerName": "image-chain03",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 40.0,
+        "height": 40.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain03/frame1.svg",
+      "bytes": 1580,
+      "sha256": "3cf4afdedb77b3bb18f9bd145cbf47d6a6cfd416b9db43b07e6973e2b16f6555",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1317",
+      "stateKey": "chain03",
+      "outerNodeId": "168:1296",
+      "innerNodeId": "226:3362"
+    },
+    {
+      "nodeId": "168:1296",
+      "layerName": "image-chain03",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 40.0,
+        "height": 40.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain03/frame2.svg",
+      "bytes": 926,
+      "sha256": "d6e52298c4b67dd9e28bcf96a32a30ea0622c575cdfe8e81a25a686dbafaecf2",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1317",
+      "stateKey": "chain03",
+      "outerNodeId": "168:1296",
+      "innerNodeId": "226:3362"
+    },
+    {
+      "nodeId": "168:1296",
+      "layerName": "image-chain03",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 40.0,
+        "height": 40.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain03/frame3.svg",
+      "bytes": 642,
+      "sha256": "6f85f07449721a2c2ce5178456a01f31e09c364669fef287aa1e98ba81492daf",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1317",
+      "stateKey": "chain03",
+      "outerNodeId": "168:1296",
+      "innerNodeId": "226:3362"
+    },
+    {
+      "nodeId": "168:1296",
+      "layerName": "image-chain03",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain03/frame4.svg",
+      "bytes": 1628,
+      "sha256": "6732044deb0c24d64d3b37caf2d04104668687a95aff40f79a9b38921d0a8e77",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1317",
+      "stateKey": "chain03",
+      "outerNodeId": "168:1296",
+      "innerNodeId": "226:3362"
+    },
+    {
+      "nodeId": "168:1296",
+      "layerName": "image-chain03",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain03/frame5.svg",
+      "bytes": 1303,
+      "sha256": "5b5604e636f7f4610e3b0fb7357ada68c8e0cba4d8d319295973d231f7902059",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1317",
+      "stateKey": "chain03",
+      "outerNodeId": "168:1296",
+      "innerNodeId": "226:3362"
+    },
+    {
+      "nodeId": "168:1296",
+      "layerName": "image-chain03",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 14.0,
+        "height": 14.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain03/frame6.svg",
+      "bytes": 964,
+      "sha256": "e5ddd0965e69b065992f5ff0f6598b0a1624dc2fcc44a79400bdfe1fd6a19bbb",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1317",
+      "stateKey": "chain03",
+      "outerNodeId": "168:1296",
+      "innerNodeId": "226:3362"
+    },
+    {
+      "nodeId": "168:1296",
+      "layerName": "image-chain03",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain03/frame7.svg",
+      "bytes": 1347,
+      "sha256": "962ac3d65e4446f408bf6305c8307f5204e358cc0d464274019e5a55fbbedea7",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1317",
+      "stateKey": "chain03",
+      "outerNodeId": "168:1296",
+      "innerNodeId": "226:3362"
+    },
+    {
+      "nodeId": "168:1296",
+      "layerName": "image-chain03",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 68.0647,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain03/icon.svg",
+      "bytes": 307,
+      "sha256": "2361129348139e86f9fdf404c440b26c80897de3142122e219b14df58409dc46",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1317",
+      "stateKey": "chain03",
+      "outerNodeId": "168:1296",
+      "innerNodeId": "226:3362"
+    },
+    {
+      "nodeId": "168:1296",
+      "layerName": "image-chain03",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 36.0647,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain03/icon1.svg",
+      "bytes": 307,
+      "sha256": "3224a930aa11d838cd28f2f93fba91678908d1f3dab1055ffa68bed501bf1e4f",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1317",
+      "stateKey": "chain03",
+      "outerNodeId": "168:1296",
+      "innerNodeId": "226:3362"
+    },
+    {
+      "nodeId": "168:1296",
+      "layerName": "image-chain03",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 48.0647,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain03/icon2.svg",
+      "bytes": 307,
+      "sha256": "5a4f68338ec3d7623ccfc65ff2871f6b284fd77821ea91eefcd2681b2af39fe1",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1317",
+      "stateKey": "chain03",
+      "outerNodeId": "168:1296",
+      "innerNodeId": "226:3362"
+    },
+    {
+      "nodeId": "168:1296",
+      "layerName": "image-chain03",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 158.0,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain03/line37.svg",
+      "bytes": 319,
+      "sha256": "03122bde000201de0269f76624cf7672703a2bdf5fac1350c13c4afa46d5c44b",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1317",
+      "stateKey": "chain03",
+      "outerNodeId": "168:1296",
+      "innerNodeId": "226:3362"
+    },
+    {
+      "nodeId": "168:1296",
+      "layerName": "image-chain03",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 12.0,
+        "height": 12.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain03/text.svg",
+      "bytes": 952,
+      "sha256": "c792cb6a49e4c168839bad15fbdf084c13da8d8f9af7e1571b955383fb23293b",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1317",
+      "stateKey": "chain03",
+      "outerNodeId": "168:1296",
+      "innerNodeId": "226:3362"
+    },
+    {
+      "nodeId": "168:1296",
+      "layerName": "image-chain03",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 5.93534,
+        "height": 10.8707
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain03/vector.svg",
+      "bytes": 318,
+      "sha256": "df234895526b0fedd93ed91a0b5abcd8abb77d3b939b478b92b1e9bc9ae45e1e",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1317",
+      "stateKey": "chain03",
+      "outerNodeId": "168:1296",
+      "innerNodeId": "226:3362"
+    },
+    {
+      "nodeId": "168:1015",
+      "layerName": "image-chain04",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain04/frame.svg",
+      "bytes": 1783,
+      "sha256": "e1241571062301e24fb5ce40683ae5f2452b215e8f4f6bbc218875d69c341d27",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1207",
+      "stateKey": "chain04",
+      "outerNodeId": "168:1015",
+      "innerNodeId": "226:4390"
+    },
+    {
+      "nodeId": "168:1015",
+      "layerName": "image-chain04",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain04/frame1.svg",
+      "bytes": 761,
+      "sha256": "fe86c75cc2fb1ab8959ea28e75e75bbf96d50f3e8edee7defca708c6ae610582",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1207",
+      "stateKey": "chain04",
+      "outerNodeId": "168:1015",
+      "innerNodeId": "226:4390"
+    },
+    {
+      "nodeId": "168:1015",
+      "layerName": "image-chain04",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain04/frame2.svg",
+      "bytes": 909,
+      "sha256": "79a19934d8a7c477e01f1e5c342f58ab84a4f657d8810a587c6b6cce9b92c481",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1207",
+      "stateKey": "chain04",
+      "outerNodeId": "168:1015",
+      "innerNodeId": "226:4390"
+    },
+    {
+      "nodeId": "168:1015",
+      "layerName": "image-chain04",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain04/frame3.svg",
+      "bytes": 698,
+      "sha256": "f26b68fc418051f370856563161b2d6856cdf83137a13c0a56d85f9060a72e93",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1207",
+      "stateKey": "chain04",
+      "outerNodeId": "168:1015",
+      "innerNodeId": "226:4390"
+    },
+    {
+      "nodeId": "168:1015",
+      "layerName": "image-chain04",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain04/frame4.svg",
+      "bytes": 727,
+      "sha256": "2f91e2950fe209696f279b99edfffe99693080cae3df7561ceeaf596d0bf8aa5",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1207",
+      "stateKey": "chain04",
+      "outerNodeId": "168:1015",
+      "innerNodeId": "226:4390"
+    },
+    {
+      "nodeId": "168:1015",
+      "layerName": "image-chain04",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain04/frame5.svg",
+      "bytes": 771,
+      "sha256": "52c16f74689560733bd22e1f13853702e2d913db138298125583a3ade06b2a0b",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1207",
+      "stateKey": "chain04",
+      "outerNodeId": "168:1015",
+      "innerNodeId": "226:4390"
+    },
+    {
+      "nodeId": "168:1015",
+      "layerName": "image-chain04",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 30.0647,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain04/icon.svg",
+      "bytes": 307,
+      "sha256": "5f3f8512f338f682a53acf3edf929ed450ade46b016727589abd404021158e6b",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1207",
+      "stateKey": "chain04",
+      "outerNodeId": "168:1015",
+      "innerNodeId": "226:4390"
+    },
+    {
+      "nodeId": "168:1015",
+      "layerName": "image-chain04",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 12.0,
+        "height": 12.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain04/text.svg",
+      "bytes": 952,
+      "sha256": "30bb026e8a621be22fbb43f115da502d8930e1f95db0f820db33fd4aa9ab5b42",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1207",
+      "stateKey": "chain04",
+      "outerNodeId": "168:1015",
+      "innerNodeId": "226:4390"
+    },
+    {
+      "nodeId": "168:1015",
+      "layerName": "image-chain04",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 5.93534,
+        "height": 10.8707
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain04/vector.svg",
+      "bytes": 318,
+      "sha256": "df234895526b0fedd93ed91a0b5abcd8abb77d3b939b478b92b1e9bc9ae45e1e",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1207",
+      "stateKey": "chain04",
+      "outerNodeId": "168:1015",
+      "innerNodeId": "226:4390"
+    },
+    {
+      "nodeId": "168:1057",
+      "layerName": "image-chain05",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 308.0,
+        "height": 348.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain05/asset.svg",
+      "bytes": 4105,
+      "sha256": "fe212f9a4e2bb76d87882ec5e6a92181a2735c39b362b28ebbb3926b6588242c",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1208",
+      "stateKey": "chain05",
+      "outerNodeId": "168:1057",
+      "innerNodeId": "226:4487"
+    },
+    {
+      "nodeId": "168:1057",
+      "layerName": "image-chain05",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain05/frame.svg",
+      "bytes": 1409,
+      "sha256": "4df9e4b8490c72b0f23b1769f0c484f20ab470508f42360a32b35464f58430f2",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1208",
+      "stateKey": "chain05",
+      "outerNodeId": "168:1057",
+      "innerNodeId": "226:4487"
+    },
+    {
+      "nodeId": "168:1057",
+      "layerName": "image-chain05",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain05/frame1.svg",
+      "bytes": 1139,
+      "sha256": "978ec4a353345732ff645ea4c2bdcfcff1f0a2e590f61ce4637715c1bc8a4711",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1208",
+      "stateKey": "chain05",
+      "outerNodeId": "168:1057",
+      "innerNodeId": "226:4487"
+    },
+    {
+      "nodeId": "168:1057",
+      "layerName": "image-chain05",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain05/frame2.svg",
+      "bytes": 837,
+      "sha256": "1afde504d57cf8ea5135bbc216fd80f0742f9a1dcc371c2fba7d0568be2f3475",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1208",
+      "stateKey": "chain05",
+      "outerNodeId": "168:1057",
+      "innerNodeId": "226:4487"
+    },
+    {
+      "nodeId": "168:1057",
+      "layerName": "image-chain05",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain05/frame3.svg",
+      "bytes": 909,
+      "sha256": "79a19934d8a7c477e01f1e5c342f58ab84a4f657d8810a587c6b6cce9b92c481",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1208",
+      "stateKey": "chain05",
+      "outerNodeId": "168:1057",
+      "innerNodeId": "226:4487"
+    },
+    {
+      "nodeId": "168:1057",
+      "layerName": "image-chain05",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain05/frame4.svg",
+      "bytes": 871,
+      "sha256": "38352942b49bc697a7f4b23200eb88f89edc96c0fb968a3e89dd944ee759aad6",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1208",
+      "stateKey": "chain05",
+      "outerNodeId": "168:1057",
+      "innerNodeId": "226:4487"
+    },
+    {
+      "nodeId": "168:1057",
+      "layerName": "image-chain05",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain05/frame5.svg",
+      "bytes": 1406,
+      "sha256": "1e17b8a4c7a3c6cc1fcd4d54abc727ca97cbe5635814291bd866db2d40ee745b",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1208",
+      "stateKey": "chain05",
+      "outerNodeId": "168:1057",
+      "innerNodeId": "226:4487"
+    },
+    {
+      "nodeId": "168:1057",
+      "layerName": "image-chain05",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain05/frame6.svg",
+      "bytes": 698,
+      "sha256": "f26b68fc418051f370856563161b2d6856cdf83137a13c0a56d85f9060a72e93",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1208",
+      "stateKey": "chain05",
+      "outerNodeId": "168:1057",
+      "innerNodeId": "226:4487"
+    },
+    {
+      "nodeId": "168:1057",
+      "layerName": "image-chain05",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 73.0647,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain05/icon.svg",
+      "bytes": 307,
+      "sha256": "79e6fd26fd535f889bb048e84cb585d982610ab58fa63d0985ae177b8f235a35",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1208",
+      "stateKey": "chain05",
+      "outerNodeId": "168:1057",
+      "innerNodeId": "226:4487"
+    },
+    {
+      "nodeId": "168:1057",
+      "layerName": "image-chain05",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 66.0647,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain05/icon1.svg",
+      "bytes": 307,
+      "sha256": "428ecfc89ef4249410f67b11c2e763bd069f084d7f51de943bdf91659ed1a2f7",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1208",
+      "stateKey": "chain05",
+      "outerNodeId": "168:1057",
+      "innerNodeId": "226:4487"
+    },
+    {
+      "nodeId": "168:1057",
+      "layerName": "image-chain05",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 150.065,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain05/icon2.svg",
+      "bytes": 307,
+      "sha256": "7ebeb5d2e87cbde83b6c2e8274b6050dbc850580832bf5ac13eb3e1082982df6",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1208",
+      "stateKey": "chain05",
+      "outerNodeId": "168:1057",
+      "innerNodeId": "226:4487"
+    },
+    {
+      "nodeId": "168:1057",
+      "layerName": "image-chain05",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 73.0647,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain05/icon3.svg",
+      "bytes": 307,
+      "sha256": "79e6fd26fd535f889bb048e84cb585d982610ab58fa63d0985ae177b8f235a35",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1208",
+      "stateKey": "chain05",
+      "outerNodeId": "168:1057",
+      "innerNodeId": "226:4487"
+    },
+    {
+      "nodeId": "168:1057",
+      "layerName": "image-chain05",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 12.0,
+        "height": 12.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain05/text.svg",
+      "bytes": 952,
+      "sha256": "d1dd2ce156bbe50eed3659d217a693a837044fd7d6bb4286549386d5c506da30",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1208",
+      "stateKey": "chain05",
+      "outerNodeId": "168:1057",
+      "innerNodeId": "226:4487"
+    },
+    {
+      "nodeId": "168:1057",
+      "layerName": "image-chain05",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 5.93534,
+        "height": 10.8707
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain05/vector.svg",
+      "bytes": 318,
+      "sha256": "df234895526b0fedd93ed91a0b5abcd8abb77d3b939b478b92b1e9bc9ae45e1e",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1208",
+      "stateKey": "chain05",
+      "outerNodeId": "168:1057",
+      "innerNodeId": "226:4487"
+    },
+    {
+      "nodeId": "168:1073",
+      "layerName": "image-chain06",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain06/frame.svg",
+      "bytes": 683,
+      "sha256": "7c25bc42f6f4575620cc13b39c69a553cda5311f0f476cbda89c676348446ecb",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1209",
+      "stateKey": "chain06",
+      "outerNodeId": "168:1073",
+      "innerNodeId": "226:4769"
+    },
+    {
+      "nodeId": "168:1073",
+      "layerName": "image-chain06",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain06/frame1.svg",
+      "bytes": 1656,
+      "sha256": "91f50e840cf2f228f6d704549914ddd983c8b846623987f8f9c492a03e41d6e9",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1209",
+      "stateKey": "chain06",
+      "outerNodeId": "168:1073",
+      "innerNodeId": "226:4769"
+    },
+    {
+      "nodeId": "168:1073",
+      "layerName": "image-chain06",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain06/frame2.svg",
+      "bytes": 847,
+      "sha256": "08fd6ee71f752860cef17ad4e8d6bd2a0e58b9205566beff3557d911923b08cb",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1209",
+      "stateKey": "chain06",
+      "outerNodeId": "168:1073",
+      "innerNodeId": "226:4769"
+    },
+    {
+      "nodeId": "168:1073",
+      "layerName": "image-chain06",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 73.0647,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain06/icon.svg",
+      "bytes": 307,
+      "sha256": "79e6fd26fd535f889bb048e84cb585d982610ab58fa63d0985ae177b8f235a35",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1209",
+      "stateKey": "chain06",
+      "outerNodeId": "168:1073",
+      "innerNodeId": "226:4769"
+    },
+    {
+      "nodeId": "168:1073",
+      "layerName": "image-chain06",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 62.0647,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain06/icon1.svg",
+      "bytes": 307,
+      "sha256": "9735b27e0b159df8198bf04177e877708f24cf4d4db441fa5bf201a2058dc424",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1209",
+      "stateKey": "chain06",
+      "outerNodeId": "168:1073",
+      "innerNodeId": "226:4769"
+    },
+    {
+      "nodeId": "168:1073",
+      "layerName": "image-chain06",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 39.0647,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain06/icon2.svg",
+      "bytes": 307,
+      "sha256": "fbfc2ecf40c9e789ddb81dde8d1684b778543d288b5ce2661a958d0a9e2154fc",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1209",
+      "stateKey": "chain06",
+      "outerNodeId": "168:1073",
+      "innerNodeId": "226:4769"
+    },
+    {
+      "nodeId": "168:1073",
+      "layerName": "image-chain06",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 56.0647,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain06/icon3.svg",
+      "bytes": 307,
+      "sha256": "6814927dccbbe2699c0adb8c02d5a35972b73b3755ba95d8122a68e8debe6be6",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1209",
+      "stateKey": "chain06",
+      "outerNodeId": "168:1073",
+      "innerNodeId": "226:4769"
+    },
+    {
+      "nodeId": "168:1073",
+      "layerName": "image-chain06",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 96.0647,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain06/icon4.svg",
+      "bytes": 307,
+      "sha256": "fcef319c9c593f83c523171795674773e434d9548daac77587367636cf39519f",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1209",
+      "stateKey": "chain06",
+      "outerNodeId": "168:1073",
+      "innerNodeId": "226:4769"
+    },
+    {
+      "nodeId": "168:1073",
+      "layerName": "image-chain06",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 5.19615,
+        "height": 4.5
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain06/polygon.svg",
+      "bytes": 261,
+      "sha256": "cd02bf6a9ac121dadc095af74c7f028b8c3252454b5007896ebd05a81557ea2f",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1209",
+      "stateKey": "chain06",
+      "outerNodeId": "168:1073",
+      "innerNodeId": "226:4769"
+    },
+    {
+      "nodeId": "168:1073",
+      "layerName": "image-chain06",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 12.0,
+        "height": 12.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain06/text.svg",
+      "bytes": 952,
+      "sha256": "2741912aa7bb871af582bd40928ec5c9b8fc32e0305175541e4b34592f39ae52",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1209",
+      "stateKey": "chain06",
+      "outerNodeId": "168:1073",
+      "innerNodeId": "226:4769"
+    },
+    {
+      "nodeId": "168:1073",
+      "layerName": "image-chain06",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 5.93534,
+        "height": 10.8707
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain06/vector.svg",
+      "bytes": 318,
+      "sha256": "df234895526b0fedd93ed91a0b5abcd8abb77d3b939b478b92b1e9bc9ae45e1e",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1209",
+      "stateKey": "chain06",
+      "outerNodeId": "168:1073",
+      "innerNodeId": "226:4769"
+    },
+    {
+      "nodeId": "168:1175",
+      "layerName": "image-chain07",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain07/frame.svg",
+      "bytes": 1110,
+      "sha256": "4103b2c8110c3266d89b73eb7418970cd0b567df5e93bae867ac29744c104488",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1246",
+      "stateKey": "chain07",
+      "outerNodeId": "168:1175",
+      "innerNodeId": "226:4965"
+    },
+    {
+      "nodeId": "168:1175",
+      "layerName": "image-chain07",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain07/frame1.svg",
+      "bytes": 350,
+      "sha256": "76893198d3b09eff30bc6f7937b283fa10f34a8f10336654c1d72af1fae25003",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1246",
+      "stateKey": "chain07",
+      "outerNodeId": "168:1175",
+      "innerNodeId": "226:4965"
+    },
+    {
+      "nodeId": "168:1175",
+      "layerName": "image-chain07",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain07/frame2.svg",
+      "bytes": 736,
+      "sha256": "8f503e7712c95b83a413b3052baeb51b8313bedcd9171d0dd7b04f511711a8db",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1246",
+      "stateKey": "chain07",
+      "outerNodeId": "168:1175",
+      "innerNodeId": "226:4965"
+    },
+    {
+      "nodeId": "168:1175",
+      "layerName": "image-chain07",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 16.0,
+        "height": 16.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain07/frame3.svg",
+      "bytes": 2847,
+      "sha256": "5963980830a12d0ae38e4b9d4ca66b1173a9ed23d4aff9036ca289c46b233b6b",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1246",
+      "stateKey": "chain07",
+      "outerNodeId": "168:1175",
+      "innerNodeId": "226:4965"
+    },
+    {
+      "nodeId": "168:1175",
+      "layerName": "image-chain07",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 14.0,
+        "height": 14.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain07/frame4.svg",
+      "bytes": 964,
+      "sha256": "648442627cba023fd48937a16859a81b58c49451a8361cf1bda3bdd37594f41c",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1246",
+      "stateKey": "chain07",
+      "outerNodeId": "168:1175",
+      "innerNodeId": "226:4965"
+    },
+    {
+      "nodeId": "168:1175",
+      "layerName": "image-chain07",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 73.0647,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain07/icon.svg",
+      "bytes": 307,
+      "sha256": "79e6fd26fd535f889bb048e84cb585d982610ab58fa63d0985ae177b8f235a35",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1246",
+      "stateKey": "chain07",
+      "outerNodeId": "168:1175",
+      "innerNodeId": "226:4965"
+    },
+    {
+      "nodeId": "168:1175",
+      "layerName": "image-chain07",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 64.0647,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain07/icon1.svg",
+      "bytes": 307,
+      "sha256": "0f976fd17f98901de58f119c0e93c67013f9d301b639cd56328f56371c4f15ed",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1246",
+      "stateKey": "chain07",
+      "outerNodeId": "168:1175",
+      "innerNodeId": "226:4965"
+    },
+    {
+      "nodeId": "168:1175",
+      "layerName": "image-chain07",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 12.0,
+        "height": 12.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain07/text.svg",
+      "bytes": 952,
+      "sha256": "30bb026e8a621be22fbb43f115da502d8930e1f95db0f820db33fd4aa9ab5b42",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1246",
+      "stateKey": "chain07",
+      "outerNodeId": "168:1175",
+      "innerNodeId": "226:4965"
+    },
+    {
+      "nodeId": "168:1175",
+      "layerName": "image-chain07",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 5.93534,
+        "height": 10.8707
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "state-container",
+      "outputPath": "tabs/home/assets/icons/evidence-chain/chain07/vector.svg",
+      "bytes": 318,
+      "sha256": "df234895526b0fedd93ed91a0b5abcd8abb77d3b939b478b92b1e9bc9ae45e1e",
+      "componentSetNodeId": "168:1325",
+      "variantNodeId": "168:1246",
+      "stateKey": "chain07",
+      "outerNodeId": "168:1175",
+      "innerNodeId": "226:4965"
+    },
+    {
+      "nodeId": "198:27602",
+      "layerName": "image-flow",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 48.0,
+        "height": 48.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/flow/circle-check.svg",
+      "bytes": 1491,
+      "sha256": "ca99f7b0c6047ad79c93520351496a541ef1a4f008ff3b510ac920facc57d83c"
+    },
+    {
+      "nodeId": "198:27602",
+      "layerName": "image-flow",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 20.0647,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/flow/icon.svg",
+      "bytes": 307,
+      "sha256": "40177de1bba5ab4cf81501d4584e185e14af23eeec74f3b97694832ceb2e0ae3"
+    },
+    {
+      "nodeId": "198:27602",
+      "layerName": "image-flow",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 28.0647,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/flow/icon1.svg",
+      "bytes": 307,
+      "sha256": "7b6ac9fb58615e453ddc09f26f6785a37587348a376293a9091a046b0812c4ed"
+    },
+    {
+      "nodeId": "198:27602",
+      "layerName": "image-flow",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 24.0647,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/flow/icon2.svg",
+      "bytes": 307,
+      "sha256": "ee158426b9a205973e7f1e87e9873c3a4b062c8ffa8e566221e1a47d0926dc13"
+    },
+    {
+      "nodeId": "198:27602",
+      "layerName": "image-flow",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 162.065,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/flow/icon3.svg",
+      "bytes": 307,
+      "sha256": "d89a5851c5d4bc72942dce489b18c06c58ff09407c77e3f6955e4dc2090d8b38"
+    },
+    {
+      "nodeId": "198:27602",
+      "layerName": "image-flow",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 65.0647,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/flow/icon4.svg",
+      "bytes": 307,
+      "sha256": "7c6522ae7b4bd5e9dc125d686a1da766e8d7922fdf55dd271fd1a7553b7beb68"
+    },
+    {
+      "nodeId": "198:27602",
+      "layerName": "image-flow",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 48.0647,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/flow/icon5.svg",
+      "bytes": 307,
+      "sha256": "ebe9a5e7d8a3c0697a4b813849a4a5c75a62575799052f7c5b87354544a6b296"
+    },
+    {
+      "nodeId": "198:27602",
+      "layerName": "image-flow",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 48.0647,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/flow/icon6.svg",
+      "bytes": 307,
+      "sha256": "3320bdc983e7460a1a590b9a6a57fce50c531e90adccfcfd3f41da621fa0e9e5"
+    },
+    {
+      "nodeId": "198:27602",
+      "layerName": "image-flow",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 12.0,
+        "height": 12.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/flow/text.svg",
+      "bytes": 952,
+      "sha256": "376f66691a56c4570e1baa6888990047be1ff8c83eed7675069c4f3aa2f69e96"
+    },
+    {
+      "nodeId": "198:27602",
+      "layerName": "image-flow",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 12.0,
+        "height": 12.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/flow/text1.svg",
+      "bytes": 952,
+      "sha256": "90bf1a9fb705c05d91164a8a8e5a1f702b611fc466f9e56c8f0d145f39595311"
+    },
+    {
+      "nodeId": "198:27602",
+      "layerName": "image-flow",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 12.0,
+        "height": 12.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/flow/text2.svg",
+      "bytes": 952,
+      "sha256": "b89552a8fac9d54e9671fe8a7f887d5ba6393df7954453364871616a5fab6577"
+    },
+    {
+      "nodeId": "198:27602",
+      "layerName": "image-flow",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 5.93534,
+        "height": 10.8707
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/flow/vector.svg",
+      "bytes": 318,
+      "sha256": "840546cf7369792fa2983a4dc9e6038e1d01f26a4379224b80918beeb1ed3a0d"
+    },
+    {
+      "nodeId": "198:27602",
+      "layerName": "image-flow",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 5.93534,
+        "height": 10.8707
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/flow/vector1.svg",
+      "bytes": 318,
+      "sha256": "df234895526b0fedd93ed91a0b5abcd8abb77d3b939b478b92b1e9bc9ae45e1e"
+    },
+    {
+      "nodeId": "198:27602",
+      "layerName": "image-flow",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 86.0,
+        "height": 1.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/flow/vector1266.svg",
+      "bytes": 254,
+      "sha256": "fedff38f664df20fca6ed77ed16e6e60a7f47fbcfab253713a32dd34a5a102ff"
+    },
+    {
+      "nodeId": "198:27602",
+      "layerName": "image-flow",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 5.93534,
+        "height": 10.8707
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/flow/vector2.svg",
+      "bytes": 318,
+      "sha256": "7da5f65f32a3cb74d28fe538dda496f86c04d23767cdad446d3c71ec36f80e93"
+    },
+    {
+      "nodeId": "198:27602",
+      "layerName": "image-flow",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 5.93534,
+        "height": 10.8707
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/flow/vector3.svg",
+      "bytes": 318,
+      "sha256": "534c711634bf933f62b926e668246867b5af6f78c4b4f60c77bd89d5413e2f8a"
+    },
+    {
+      "nodeId": "198:27602",
+      "layerName": "image-flow",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 5.93534,
+        "height": 10.8707
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/flow/vector4.svg",
+      "bytes": 318,
+      "sha256": "0bbaa9ed27e69a63fde43163835bb0df224ca039c28732f626a0142547bb5e7e"
+    },
+    {
+      "nodeId": "198:35625",
+      "layerName": "research-foundation-decoration",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1393.0,
+        "height": 465.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/foundation/editable-svg.svg",
+      "bytes": 417,
+      "sha256": "857b8aac06d124ed61044b9c95b52a26e9f5155e3cb0fc798b22b8fe77598ef0"
+    },
+    {
+      "nodeId": "198:35625",
+      "layerName": "research-foundation-decoration",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1441.0,
+        "height": 465.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/foundation/vector.svg",
+      "bytes": 672,
+      "sha256": "440ae060a3d82dd8ae5ed1efcb8482939edf9458a0895ab305a122af9bbffeba"
+    },
+    {
+      "nodeId": "198:35475",
+      "layerName": "image-safecontrol",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 24.0,
+        "height": 24.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/security/frame.svg",
+      "bytes": 1733,
+      "sha256": "aa5ebc89c8a034b0821155cea3872ea625ad2b68fe6022bdc90cd2d2d60b8ca4"
+    },
+    {
+      "nodeId": "198:35475",
+      "layerName": "image-safecontrol",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 24.0,
+        "height": 24.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/security/frame1.svg",
+      "bytes": 1159,
+      "sha256": "c8e4175c167ff827794972fdf8f1e84d28e833fc7ef777d4b472f035275c6b93"
+    },
+    {
+      "nodeId": "198:35475",
+      "layerName": "image-safecontrol",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 24.0,
+        "height": 24.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/security/frame2.svg",
+      "bytes": 851,
+      "sha256": "0b061b86187848302329223c560fc1d332fa05e3542db085f7882074f8495dbe"
+    },
+    {
+      "nodeId": "198:35475",
+      "layerName": "image-safecontrol",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 31.0485,
+        "height": 0.75
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/security/icon.svg",
+      "bytes": 337,
+      "sha256": "cd0509c4c98410d955db3b16c92e2446af03dfc3066341d72c1f153ce2067ad4"
+    },
+    {
+      "nodeId": "198:35475",
+      "layerName": "image-safecontrol",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 36.0485,
+        "height": 0.75
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/security/icon1.svg",
+      "bytes": 337,
+      "sha256": "796a46565c7f1147beab441cf7a797c0d1b918a8bb61930562602d59ad0a47cf"
+    },
+    {
+      "nodeId": "198:35475",
+      "layerName": "image-safecontrol",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 36.0485,
+        "height": 0.75
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/security/icon2.svg",
+      "bytes": 337,
+      "sha256": "796a46565c7f1147beab441cf7a797c0d1b918a8bb61930562602d59ad0a47cf"
+    },
+    {
+      "nodeId": "198:35475",
+      "layerName": "image-safecontrol",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 141.0,
+        "height": 161.152
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/security/polygon1.svg",
+      "bytes": 329,
+      "sha256": "62e9374cfa6adacde4a508f459532add4115bc09c1c8805c0eb0009f42c7f944"
+    },
+    {
+      "nodeId": "198:35475",
+      "layerName": "image-safecontrol",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 133.0,
+        "height": 146.155
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/security/polygon4.svg",
+      "bytes": 1115,
+      "sha256": "b1a93747647300f0186bf4c308ea313d47be6abd722f525202b7a1501a97ae26"
+    },
+    {
+      "nodeId": "198:35475",
+      "layerName": "image-safecontrol",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 123.0,
+        "height": 141.153
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/security/polygon7.svg",
+      "bytes": 329,
+      "sha256": "ee294504fb2259d74d4f872591af6eb5e74434dd23da2003b307a05218cbbaf3"
+    },
+    {
+      "nodeId": "198:35475",
+      "layerName": "image-safecontrol",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 124.0,
+        "height": 141.151
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/security/polygon8.svg",
+      "bytes": 319,
+      "sha256": "6d22673608597bc206608762feacd68c5e39a66075b702e890fef9361cd1d938"
+    },
+    {
+      "nodeId": "198:35475",
+      "layerName": "image-safecontrol",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 48.0,
+        "height": 48.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/security/shield-keyhole.svg",
+      "bytes": 926,
+      "sha256": "b6ef5a46023291d54f129ef13b338bb974b6d2802af41708f3f581ffb71f3096"
+    },
+    {
+      "nodeId": "198:35475",
+      "layerName": "image-safecontrol",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 9.0,
+        "height": 9.0
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/security/text.svg",
+      "bytes": 1079,
+      "sha256": "ab16f14de43e0ce4c21df8c1b497a2f72587e45e830870787f1865adf1030650"
+    },
+    {
+      "nodeId": "198:35475",
+      "layerName": "image-safecontrol",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 4.45151,
+        "height": 8.15302
+      },
+      "exportType": "figma-svg-fragment",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/icons/security/vector.svg",
+      "bytes": 344,
+      "sha256": "a7cfe43be7e6d2c41f9e7fd77820e69986f416f251805298ae7f673b2eb1d854"
+    },
+    {
+      "nodeId": "198:27637",
+      "layerName": "discipline-stream-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 2560,
+        "height": 1440
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/images/discipline/app-amix.png",
+      "bytes": 3612190,
+      "sha256": "06a3276e1ea8e614a9962f0dcb064661d7e2e85d1a88a6d439455fd3cb84ad3b"
+    },
+    {
+      "nodeId": "198:27637",
+      "layerName": "discipline-stream-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 2560,
+        "height": 1440
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/images/discipline/app-earthlink.png",
+      "bytes": 3109131,
+      "sha256": "63354bd5c17fd5d1ed7d7bdb5b675f6da7e47145da907c8752b1305584e3b550"
+    },
+    {
+      "nodeId": "198:27637",
+      "layerName": "discipline-stream-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 2560,
+        "height": 1440
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/images/discipline/app-migo-chem.png",
+      "bytes": 3305627,
+      "sha256": "0d89529e71d0cfafd3f810beab8f4b62f092b32cdd41cb4345d0047095c2050a"
+    },
+    {
+      "nodeId": "198:27637",
+      "layerName": "discipline-stream-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 2560,
+        "height": 1440
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/images/discipline/app-origene.png",
+      "bytes": 930818,
+      "sha256": "cfef34b1496bb49b60aeac536cc6f352beb856ab236106161468a3d1c2062afe"
+    },
+    {
+      "nodeId": "198:27637",
+      "layerName": "discipline-stream-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 2560,
+        "height": 1440
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/images/discipline/app-sciverse.png",
+      "bytes": 2302217,
+      "sha256": "92e7d2522aa505b5fe3c3e11df59f18664dfb2c76e8d76212cc204b82e33ffd3"
+    },
+    {
+      "nodeId": "198:27637",
+      "layerName": "discipline-stream-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 2560,
+        "height": 1440
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/images/discipline/app-venuspod.png",
+      "bytes": 3375030,
+      "sha256": "9305a94b40d79119dc4a49dc9867b1ad6d282c6d5c2290b442da19404d41bd9f"
+    },
+    {
+      "nodeId": "198:27637",
+      "layerName": "discipline-stream-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1290,
+        "height": 540
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/images/discipline/data-afdb.png",
+      "bytes": 465600,
+      "sha256": "ab1361e898627d7e56b29cb34b49f88ce9a2ce172417f1584f977c5023f5457f"
+    },
+    {
+      "nodeId": "198:27637",
+      "layerName": "discipline-stream-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1228,
+        "height": 490
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/images/discipline/data-buchwald-hartwig.png",
+      "bytes": 468954,
+      "sha256": "f6e6a0479c425f3cf6184d7e8e7d10a45000e01af363280258bb0bd15f00a65f"
+    },
+    {
+      "nodeId": "198:27637",
+      "layerName": "discipline-stream-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1185,
+        "height": 487
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/images/discipline/data-cellxgene.png",
+      "bytes": 206456,
+      "sha256": "c99ee49b721c29c05b2e029e3f2a1361ff61975475cd929ae9c8dee6bff301d8"
+    },
+    {
+      "nodeId": "198:27637",
+      "layerName": "discipline-stream-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1290,
+        "height": 540
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/images/discipline/data-gdc.png",
+      "bytes": 465600,
+      "sha256": "ab1361e898627d7e56b29cb34b49f88ce9a2ce172417f1584f977c5023f5457f"
+    },
+    {
+      "nodeId": "198:27637",
+      "layerName": "discipline-stream-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1185,
+        "height": 487
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/images/discipline/data-ivy-gap.png",
+      "bytes": 206456,
+      "sha256": "c99ee49b721c29c05b2e029e3f2a1361ff61975475cd929ae9c8dee6bff301d8"
+    },
+    {
+      "nodeId": "198:27637",
+      "layerName": "discipline-stream-assets",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1290,
+        "height": 540
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "context-container",
+      "outputPath": "tabs/home/assets/images/discipline/data-open-targets.png",
+      "bytes": 465600,
+      "sha256": "ab1361e898627d7e56b29cb34b49f88ce9a2ce172417f1584f977c5023f5457f"
+    },
+    {
+      "nodeId": "198:35502",
+      "layerName": "image-open-ecosystem",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1736,
+        "height": 1160
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "exact-file-node",
+      "outputPath": "tabs/home/assets/images/ecosystem/image-open-ecosystem.png",
+      "bytes": 213778,
+      "sha256": "87fd35c2075d06d170b0d7285deb35283b03b5d52a682cc1a4c963b3365e9b64"
+    },
+    {
+      "nodeId": "220:62071",
+      "layerName": "image-intern-QRcode",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": null,
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "exact-file-node",
+      "outputPath": "tabs/home/assets/images/footer/image-intern-qrcode.png",
+      "bytes": 39245,
+      "sha256": "ef1bc42d9115418c435fdcc3f9f90826388cf910ff37de26a0d83fdce3ef6680"
+    },
+    {
+      "nodeId": "198:27544",
+      "layerName": "image-herosection-decoration01",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 218,
+        "height": 267
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "exact-file-node",
+      "outputPath": "tabs/home/assets/images/hero/image-herosection-decoration01.png",
+      "bytes": 100365,
+      "sha256": "6b6952f0f00484a44403ab863c8c38de3e25918ab7b0690e0045fe3120802005"
+    },
+    {
+      "nodeId": "198:27554",
+      "layerName": "image-herosection-decoration02",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 266,
+        "height": 138
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "exact-file-node",
+      "outputPath": "tabs/home/assets/images/hero/image-herosection-decoration02.png",
+      "bytes": 65378,
+      "sha256": "8ce2afad9bdf21717f4cb2e62c2475b85968652ccfab72cb280ea69964af93c5"
+    },
+    {
+      "nodeId": "198:27540",
+      "layerName": "image-herosection-decoration03",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 201,
+        "height": 144
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "exact-file-node",
+      "outputPath": "tabs/home/assets/images/hero/image-herosection-decoration03.png",
+      "bytes": 62175,
+      "sha256": "5ee189828844067b26f7c77bbf2af2bea4638440ded6bbb5f43966dd2a4b2126"
+    },
+    {
+      "nodeId": "198:27539",
+      "layerName": "image-herosection-screen",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1440,
+        "height": 813
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "exact-file-node",
+      "outputPath": "tabs/home/assets/images/hero/image-herosection-screen.png",
+      "bytes": 145115,
+      "sha256": "38d23204f094e416bf2fa6fe146beec60bc75b08159d3ea0432a52e0eb5568c6"
+    },
+    {
+      "nodeId": "198:53844",
+      "layerName": "image-highlight01",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 240,
+        "height": 240
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "exact-file-node",
+      "outputPath": "tabs/home/assets/images/highlights/image-highlight01.png",
+      "bytes": 22633,
+      "sha256": "b5be057e43e8c85ce6814353074b8de2db044e12b6137328c66119245e22fe79"
+    },
+    {
+      "nodeId": "198:53849",
+      "layerName": "image-highlight02",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 240,
+        "height": 240
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "exact-file-node",
+      "outputPath": "tabs/home/assets/images/highlights/image-highlight02.png",
+      "bytes": 58734,
+      "sha256": "72f1710e458e544f6c797e52a11ab4db51881218e9cf4eb1b59110d341bf8145"
+    },
+    {
+      "nodeId": "198:53847",
+      "layerName": "image-highlight03",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 240,
+        "height": 240
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "exact-file-node",
+      "outputPath": "tabs/home/assets/images/highlights/image-highlight03.png",
+      "bytes": 57936,
+      "sha256": "5b7695789971db1259a89d645e17cd423acaf073e474af18e69ac234516908c1"
+    },
+    {
+      "nodeId": "198:53859",
+      "layerName": "image-highlight04",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 240,
+        "height": 240
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "exact-file-node",
+      "outputPath": "tabs/home/assets/images/highlights/image-highlight04.png",
+      "bytes": 49753,
+      "sha256": "7bd74849af3ecbf152bd0ff58ff1cb1ff736dd7bddf8b4188b8b424a725d87ab"
+    },
+    {
+      "nodeId": "198:53861",
+      "layerName": "image-highlight05",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 240,
+        "height": 240
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "exact-file-node",
+      "outputPath": "tabs/home/assets/images/highlights/image-highlight05.png",
+      "bytes": 45621,
+      "sha256": "306014df91c56b0b1b8b39b1f73f4f1e1111206bc30896456210dd92e3ae0d42"
+    },
+    {
+      "nodeId": "198:53857",
+      "layerName": "image-highlight06",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 240,
+        "height": 240
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "exact-file-node",
+      "outputPath": "tabs/home/assets/images/highlights/image-highlight06.png",
+      "bytes": 51607,
+      "sha256": "96b550e78949f8fd528b23e836d0cde9db8168a5bb1044ddffc29f866073af1d"
+    },
+    {
+      "nodeId": "198:27745",
+      "layerName": "image-output01",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1619,
+        "height": 971
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "exact-file-node",
+      "outputPath": "tabs/home/assets/images/outputs/image-output01.png",
+      "bytes": 1528707,
+      "sha256": "cc963de91fd42fda8d5ba58c8f67ee799924ba58b0abd8b5bc0b9fa288ad1340"
+    },
+    {
+      "nodeId": "198:27751",
+      "layerName": "image-output02",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1686,
+        "height": 933
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "exact-file-node",
+      "outputPath": "tabs/home/assets/images/outputs/image-output02.png",
+      "bytes": 908105,
+      "sha256": "4f2ee37bb4e3734e9f6ebb8239076000967b370247fde1c838f3a15a7cc64b92"
+    },
+    {
+      "nodeId": "198:27757",
+      "layerName": "image-output03",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 902,
+        "height": 338
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "exact-file-node",
+      "outputPath": "tabs/home/assets/images/outputs/image-output03.png",
+      "bytes": 276047,
+      "sha256": "81bf3242f11299bf30314000f799675634fa697ac4544b35e2297742aa5d78de"
+    },
+    {
+      "nodeId": "198:27765",
+      "layerName": "image-output04",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 664,
+        "height": 306
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "exact-file-node",
+      "outputPath": "tabs/home/assets/images/outputs/image-output04.png",
+      "bytes": 155695,
+      "sha256": "921e616ae1e7affff8c1b38a7f26041460fdb4ec4b1664a58825cd00da58c132"
+    },
+    {
+      "nodeId": "198:27771",
+      "layerName": "image-output05",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 664,
+        "height": 306
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "exact-file-node",
+      "outputPath": "tabs/home/assets/images/outputs/image-output05.png",
+      "bytes": 166597,
+      "sha256": "c24e12d6f1d8664d4aa1149d5092b3acc5a7272bda33969cdbbd05a4fe8fdaa0"
+    },
+    {
+      "nodeId": "198:27777",
+      "layerName": "image-output06",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 664,
+        "height": 306
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "exact-file-node",
+      "outputPath": "tabs/home/assets/images/outputs/image-output06.png",
+      "bytes": 134952,
+      "sha256": "0034917aba4d70fd8658ad9335d2cd6c30063a1b2763bcbc90d2d47ce3732c6a"
+    },
+    {
+      "nodeId": "198:27783",
+      "layerName": "image-output07",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 664,
+        "height": 306
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "exact-file-node",
+      "outputPath": "tabs/home/assets/images/outputs/image-output07.png",
+      "bytes": 161736,
+      "sha256": "0d6550d776754ea79fa1da474dd297ea6f7cbbbc9e149ba0af53331659d36464"
+    },
+    {
+      "nodeId": "198:35631",
+      "layerName": "image-interns2",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1254,
+        "height": 1254
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "exact-file-node",
+      "outputPath": "tabs/home/assets/images/research-base/image-interns2.png",
+      "bytes": 793662,
+      "sha256": "492e4a7aee105c5946758a0921bff2d93c75d7a2fa28ec350bd83f193109662c"
+    },
+    {
+      "nodeId": "198:35630",
+      "layerName": "image-worldmordel",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1254,
+        "height": 1254
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "exact-file-node",
+      "outputPath": "tabs/home/assets/images/research-base/image-worldmordel.png",
+      "bytes": 1426929,
+      "sha256": "cb89a759cdd6af63815e260d9cd8d2ebd2e2f7b6cf72ea600b40209b43b44f89"
+    },
+    {
+      "nodeId": "local-source",
+      "layerName": "image-ResearchCases-Achievements01",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1440,
+        "height": 810
+      },
+      "exportType": "user-provided-png",
+      "sourceNodeResolution": "user-provided-file",
+      "outputPath": "tabs/home/assets/images/research-cases/image-research-cases-achievements01.png",
+      "bytes": 1058097,
+      "sha256": "cfecbc93491200ef83760d82b78a94f09ac26c1cb9285ff741f61106a7da5728"
+    },
+    {
+      "nodeId": "local-source",
+      "layerName": "image-ResearchCases-Achievements02",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1440,
+        "height": 810
+      },
+      "exportType": "user-provided-png",
+      "sourceNodeResolution": "user-provided-file",
+      "outputPath": "tabs/home/assets/images/research-cases/image-research-cases-achievements02.png",
+      "bytes": 1264788,
+      "sha256": "96fb72479de21015f420756975895dad7a7537ad28dd727a7cb5db7fb35b8789"
+    },
+    {
+      "nodeId": "local-source",
+      "layerName": "image-ResearchCases-Achievements03",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1440,
+        "height": 810
+      },
+      "exportType": "user-provided-png",
+      "sourceNodeResolution": "user-provided-file",
+      "outputPath": "tabs/home/assets/images/research-cases/image-research-cases-achievements03.png",
+      "bytes": 1077921,
+      "sha256": "8f3efb08e08b011ef26456da2be0060d91f49d424be9c7bb022a156041b867bd"
+    },
+    {
+      "nodeId": "local-source",
+      "layerName": "image-ResearchCases-Achievements04",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1440,
+        "height": 810
+      },
+      "exportType": "user-provided-png",
+      "sourceNodeResolution": "user-provided-file",
+      "outputPath": "tabs/home/assets/images/research-cases/image-research-cases-achievements04.png",
+      "bytes": 997950,
+      "sha256": "5dd2d5bfd03d9635c8263b9ce90607b7e4349a61c52e2ad9b3e359af19148bba"
+    },
+    {
+      "nodeId": "local-source",
+      "layerName": "image-ResearchCases-Achievements05",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1440,
+        "height": 810
+      },
+      "exportType": "user-provided-png",
+      "sourceNodeResolution": "user-provided-file",
+      "outputPath": "tabs/home/assets/images/research-cases/image-research-cases-achievements05.png",
+      "bytes": 484152,
+      "sha256": "033ec2743cf95412d760a00742f101a5b5efe8a819bf8dac20551f017d580470"
+    },
+    {
+      "nodeId": "local-source",
+      "layerName": "image-ResearchCases-Achievements06",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1440,
+        "height": 810
+      },
+      "exportType": "user-provided-png",
+      "sourceNodeResolution": "user-provided-file",
+      "outputPath": "tabs/home/assets/images/research-cases/image-research-cases-achievements06.png",
+      "bytes": 1380479,
+      "sha256": "b4cc0f8e1fcb3b3411e12abaafb73146e69be139ab7451009c924a50cb38f52b"
+    },
+    {
+      "nodeId": "local-source",
+      "layerName": "image-ResearchCases-Achievements07",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1440,
+        "height": 810
+      },
+      "exportType": "user-provided-png",
+      "sourceNodeResolution": "user-provided-file",
+      "outputPath": "tabs/home/assets/images/research-cases/image-research-cases-achievements07.png",
+      "bytes": 308140,
+      "sha256": "18b472e4968f00c455c46cad284d1d1d5da667ef7238d7b9367ed516e1013775"
+    },
+    {
+      "nodeId": "local-source",
+      "layerName": "image-ResearchCases-Achievements08",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1440,
+        "height": 810
+      },
+      "exportType": "user-provided-png",
+      "sourceNodeResolution": "user-provided-file",
+      "outputPath": "tabs/home/assets/images/research-cases/image-research-cases-achievements08.png",
+      "bytes": 520006,
+      "sha256": "d2b3bcd7742d83d440954891eff7a5136b12de1c83461b50ed27f26a071325a2"
+    },
+    {
+      "nodeId": "local-source",
+      "layerName": "image-ResearchCases-Achievements09",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1440,
+        "height": 810
+      },
+      "exportType": "user-provided-png",
+      "sourceNodeResolution": "user-provided-file",
+      "outputPath": "tabs/home/assets/images/research-cases/image-research-cases-achievements09.png",
+      "bytes": 1272347,
+      "sha256": "72ded8694848841be0d1a3b48ac3e60d7e196462e11d4de9c7fb8107178ab059"
+    },
+    {
+      "nodeId": "local-source",
+      "layerName": "image-ResearchCases-Achievements10",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1440,
+        "height": 810
+      },
+      "exportType": "user-provided-png",
+      "sourceNodeResolution": "user-provided-file",
+      "outputPath": "tabs/home/assets/images/research-cases/image-research-cases-achievements10.png",
+      "bytes": 1586716,
+      "sha256": "3bdb743db2d675df5f0acf829421f6a952652e758feed908737ec70e11b65a4f"
+    },
+    {
+      "nodeId": "198:35475",
+      "layerName": "image-safecontrol",
+      "checkedAt": "2026-08-24T00:00:00.0000000Z",
+      "naturalSize": {
+        "width": 1840,
+        "height": 1000
+      },
+      "exportType": "figma-original-png",
+      "sourceNodeResolution": "exact-file-node",
+      "outputPath": "tabs/home/assets/images/security/image-safecontrol.png",
+      "bytes": 137930,
+      "sha256": "c97a815adf54f192ebf2be58074095ee26bf2ac8b4bccacc472b0bdf5ffcf3b1"
+    }
+  ]
+}

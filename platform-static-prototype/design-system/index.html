@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InternInkStone Design System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&amp;family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;600;700&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared/css/tokens.css">
+  <link rel="stylesheet" href="../shared/css/base.css">
+  <link rel="stylesheet" href="../shared/css/shell.css">
+  <link rel="stylesheet" href="../shared/css/styles.css">
+  <link rel="stylesheet" href="../shared/css/design-system-overrides.css?v=20260821-5">
+  <link rel="stylesheet" href="./design-system.css?v=20260821-3">
+</head>
+<body>
+  <main class="ds-page">
+    <header class="ds-hero">
+      <p class="ds-eyebrow">InternInkStone</p>
+      <h1 class="ds-title">Design System</h1>
+      <p class="ds-summary">这里展示第一批已经获得 Figma 证据并完成代码映射的公共规范，以及项目统一的字体与适配基线。</p>
+      <nav class="ds-module-nav" aria-label="Design System 模块">
+        <a href="./index.html" aria-current="page">原子规范</a>
+        <a href="./components.html">组件规范</a>
+      </nav>
+    </header>
+
+    <section class="ds-section" aria-labelledby="current-status">
+      <h2 id="current-status">当前状态</h2>
+      <p>已实现 9 个颜色 Variable、3 个圆角 Variable、2 套字体栈和 1 个 Text Style；另登记 5 个组件状态色与 1 个胶囊圆角代码 Token，它们来自已批准的组件迁移，不计入 Figma Variable。完整 Collection、Modes、Alias、Effect Styles 与 Grid Styles 仍待精确数据，不在本页推测补齐。</p>
+    </section>
+
+    <section class="ds-section" aria-labelledby="component-color-tokens">
+      <div class="ds-section-heading">
+        <div>
+          <p class="ds-kicker">Code tokens</p>
+          <h2 id="component-color-tokens">组件状态色</h2>
+        </div>
+        <p>来源：参考组件迁移；非当前 Figma Variable</p>
+      </div>
+      <div class="ds-token-grid ds-color-grid">
+        <article class="ds-token-card"><span class="ds-color-swatch" style="--ds-swatch: var(--state-danger)" aria-hidden="true"></span><strong class="ds-token-name">--state-danger</strong><span>#c03030</span></article>
+        <article class="ds-token-card"><span class="ds-color-swatch" style="--ds-swatch: var(--state-danger-strong)" aria-hidden="true"></span><strong class="ds-token-name">--state-danger-strong</strong><span>#9a2020</span></article>
+        <article class="ds-token-card"><span class="ds-color-swatch" style="--ds-swatch: var(--state-success)" aria-hidden="true"></span><strong class="ds-token-name">--state-success</strong><span>#34d399</span></article>
+        <article class="ds-token-card"><span class="ds-color-swatch" style="--ds-swatch: var(--state-warning)" aria-hidden="true"></span><strong class="ds-token-name">--state-warning</strong><span>#fbbf24</span></article>
+        <article class="ds-token-card"><span class="ds-color-swatch" style="--ds-swatch: var(--state-error)" aria-hidden="true"></span><strong class="ds-token-name">--state-error</strong><span>#f87171</span></article>
+      </div>
+    </section>
+
+    <section class="ds-section" aria-labelledby="color-tokens">
+      <div class="ds-section-heading">
+        <div>
+          <p class="ds-kicker">Variables</p>
+          <h2 id="color-tokens">颜色</h2>
+        </div>
+        <p>来源节点：139:606、155:642、242:63219</p>
+      </div>
+      <div class="ds-token-grid ds-color-grid">
+        <article class="ds-token-card">
+          <span class="ds-color-swatch" style="--ds-swatch: var(--paper)" aria-hidden="true"></span>
+          <strong class="ds-token-name">--paper</strong><span>#ffffff</span>
+        </article>
+        <article class="ds-token-card">
+          <span class="ds-color-swatch" style="--ds-swatch: var(--bg)" aria-hidden="true"></span>
+          <strong class="ds-token-name">--bg</strong><span>#fdfcf8</span>
+        </article>
+        <article class="ds-token-card">
+          <span class="ds-color-swatch" style="--ds-swatch: var(--ink)" aria-hidden="true"></span>
+          <strong class="ds-token-name">--ink</strong><span>#1a2332</span>
+        </article>
+        <article class="ds-token-card">
+          <span class="ds-color-swatch" style="--ds-swatch: var(--ink-soft)" aria-hidden="true"></span>
+          <strong class="ds-token-name">--ink-soft</strong><span>#3a4556</span>
+        </article>
+        <article class="ds-token-card">
+          <span class="ds-color-swatch" style="--ds-swatch: var(--bg-soft)" aria-hidden="true"></span>
+          <strong class="ds-token-name">--bg-soft</strong><span>#f7f4ec</span>
+        </article>
+        <article class="ds-token-card">
+          <span class="ds-color-swatch" style="--ds-swatch: var(--bg-soft-1)" aria-hidden="true"></span>
+          <strong class="ds-token-name">--bg-soft-1</strong><span>#faf8f2</span>
+        </article>
+        <article class="ds-token-card">
+          <span class="ds-color-swatch" style="--ds-swatch: var(--line)" aria-hidden="true"></span>
+          <strong class="ds-token-name">--line</strong><span>#e8e4d9</span>
+        </article>
+        <article class="ds-token-card">
+          <span class="ds-color-swatch" style="--ds-swatch: var(--muted)" aria-hidden="true"></span>
+          <strong class="ds-token-name">--muted</strong><span>#7a8394</span>
+        </article>
+        <article class="ds-token-card">
+          <span class="ds-color-swatch" style="--ds-swatch: var(--muted-2)" aria-hidden="true"></span>
+          <strong class="ds-token-name">--muted-2</strong><span>#a9b0bd</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="ds-section" aria-labelledby="radius-tokens">
+      <div class="ds-section-heading">
+        <div><p class="ds-kicker">Variables + code token</p><h2 id="radius-tokens">圆角</h2></div>
+        <p>前三项来源节点：139:606、155:642；pill 为组件代码 Token</p>
+      </div>
+      <div class="ds-radius-grid">
+        <article class="ds-radius-card">
+          <span class="ds-radius-sample" style="border-radius: var(--radius)" aria-hidden="true"></span>
+          <strong class="ds-token-name">--radius</strong><span>4px</span>
+        </article>
+        <article class="ds-radius-card">
+          <span class="ds-radius-sample" style="border-radius: var(--radius-card)" aria-hidden="true"></span>
+          <strong class="ds-token-name">--radius-card</strong><span>8px</span>
+        </article>
+        <article class="ds-radius-card">
+          <span class="ds-radius-sample" style="border-radius: var(--12px)" aria-hidden="true"></span>
+          <strong class="ds-token-name">--12px</strong><span>12px</span>
+        </article>
+        <article class="ds-radius-card">
+          <span class="ds-radius-sample" style="border-radius: var(--radius-pill)" aria-hidden="true"></span>
+          <strong class="ds-token-name">--radius-pill</strong><span>999px · component code token</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="ds-section" aria-labelledby="font-family">
+      <div class="ds-section-heading">
+        <div><p class="ds-kicker">Code baseline</p><h2 id="font-family">Font Family</h2></div>
+        <p>项目级方案，不作为 Figma Variable 计数</p>
+      </div>
+      <div class="ds-font-grid">
+        <article class="ds-font-card ds-font-sans">
+          <strong>Sans</strong><p>科研基础设施，让专业资源连接更多可能。</p><span>--font-sans</span>
+        </article>
+        <article class="ds-font-card ds-font-serif">
+          <strong>Serif</strong><p>Research begins with a better question.</p><span>--font-serif</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="ds-section" aria-labelledby="text-style">
+      <div class="ds-section-heading">
+        <div><p class="ds-kicker">Text Style</p><h2 id="text-style">Title/h1</h2></div>
+        <p>来源节点：198:53298、198:53299</p>
+      </div>
+      <div class="ds-text-style-sample">
+        <p class="text-title-h1">让你的科研课题连接更多能力，让专业资源创造更大价值。</p>
+        <dl class="ds-style-spec">
+          <div><dt>Code class</dt><dd>.text-title-h1</dd></div>
+          <div><dt>Font size</dt><dd>24px</dd></div>
+          <div><dt>Line height</dt><dd>32px</dd></div>
+          <div><dt>Weight</dt><dd>600</dd></div>
+          <div><dt>Letter spacing</dt><dd>0.48px</dd></div>
+        </dl>
+      </div>
+      <p class="ds-note">Figma 使用 Source Han Serif SC；当前代码按已批准的项目 Serif 栈显示。两者的视觉差异需在具体页面实现时继续核对。</p>
+    </section>
+
+    <section class="ds-section" aria-labelledby="responsive-principles">
+      <div class="ds-section-heading">
+        <div><p class="ds-kicker">Responsive</p><h2 id="responsive-principles">三档适配</h2></div>
+        <p>紧凑优先，再增强到中等与宽屏</p>
+      </div>
+      <div class="ds-responsive-grid">
+        <article><strong>紧凑</strong><span>&lt; 768px</span><p>单列内容，操作按优先级换行。</p></article>
+        <article><strong>中等</strong><span>768px–1199px</span><p>减少列数，分栏可转为上下结构。</p></article>
+        <article><strong>宽屏</strong><span>≥ 1200px</span><p>最大宽度容器，多列与完整导航。</p></article>
+      </div>
+      <h3 class="ds-subheading">适配 Token</h3>
+      <dl class="ds-responsive-tokens">
+        <div>
+          <dt class="ds-token-name">--layout-content-max</dt>
+          <dd>1200px</dd>
+        </div>
+        <div>
+          <dt class="ds-token-name">--layout-text-measure</dt>
+          <dd>72ch</dd>
+        </div>
+        <div>
+          <dt class="ds-token-name">--layout-page-gutter</dt>
+          <dd>紧凑 20px；中等 32px；宽屏 48px</dd>
+        </div>
+        <div>
+          <dt class="ds-token-name">--layout-section-space</dt>
+          <dd>紧凑 64px；中等 80px；宽屏 96px</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="ds-section" aria-labelledby="admission-rule">
+      <h2 id="admission-rule">收录原则</h2>
+      <ul>
+        <li>Variable 与 Style 必须有当前文件的实际节点或导出数据作为证据。</li>
+        <li>从产品模块提炼的组件规则至少存在两个真实消费者；用户明确批准从参考 Design System 迁移的组件基线可先进入候选公共库，但必须登记来源、当前消费者和待验证边界。</li>
+        <li>公共 CSS、消费者和验证范围应在归属地图登记。</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,853 @@
+/* Stable shared component rules and verified Figma Text Style mappings. */
+
+/*
+ * Figma Text Style: Title/h1
+ * Verified on nodes 198:53298 and 198:53299.
+ * Home titles use the self-hosted Source Han Serif SC page subset.
+ */
+.text-title-h1 {
+  margin: 0;
+  font-family: var(--font-serif-cjk);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.48px;
+  line-height: 32px;
+}
+
+.text-content-title,
+.text-title-h2 {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-serif-cjk);
+  font-style: normal;
+}
+
+.text-content-title {
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 64px;
+}
+
+.text-title-h2 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 44px;
+}
+
+.text-title-h3 {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.text-body-xl,
+.text-body-lg,
+.text-body-default,
+.text-body-reading,
+.text-body-compact,
+.text-control-default {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-style: normal;
+  letter-spacing: 0;
+}
+
+.text-body-xl { font-size: 18px; font-weight: 400; line-height: 24px; }
+.text-body-lg { font-size: 16px; font-weight: 400; line-height: 24px; }
+.text-body-default { font-size: 14px; font-weight: 400; line-height: 1.6; }
+.text-body-reading { font-size: 14px; font-weight: 400; line-height: 1.7; }
+.text-body-compact { font-size: 13px; font-weight: 400; line-height: 1.65; }
+.text-control-default { font-size: 13px; font-weight: 500; line-height: 16px; }
+
+.effect-overlay { box-shadow: 0 8px 24px rgb(0 0 0 / 8%); }
+.effect-modal { box-shadow: 0 20px 60px rgb(0 0 0 / 12%); }
+
+/*
+ * Component library migration source:
+ * interndiscovery/platform-static-prototype/design-system/atoms.html and
+ * shared/css/design-system-overrides.css.
+ *
+ * Component-level aliases bind the migrated rules to this project's tokens;
+ * no reference-project token names are retained below.
+ */
+:root {
+  --component-button-bg: var(--paper);
+  --component-button-bg-hover: var(--bg-soft);
+  --component-button-border: var(--line);
+  --component-button-fg: var(--ink-soft);
+  --component-button-primary-bg: var(--ink);
+  --component-button-primary-bg-hover: var(--ink-soft);
+  --component-button-primary-fg: var(--paper);
+  --component-text-button-bg: var(--bg);
+  --component-text-button-bg-hover: var(--bg-soft);
+  --component-text-button-fg: var(--ink-soft);
+  --component-control-height-sm: 32px;
+  --component-control-height-md: 36px;
+  --component-focus-ring: color-mix(in srgb, var(--ink) 28%, transparent);
+  --component-overlay-bg: color-mix(in srgb, var(--ink) 32%, transparent);
+  --component-dialog-shadow: 0 20px 60px -4px color-mix(in srgb, var(--ink) 12%, transparent);
+  --component-toast-shadow: 0 12px 32px color-mix(in srgb, var(--ink) 30%, transparent);
+  --component-motion-fast: 150ms ease;
+  --component-motion-dialog: 200ms ease;
+  --component-motion-toast: 220ms ease;
+}
+
+/* Buttons: sizes, hierarchy levels, text actions, danger and disabled states. */
+.btn,
+.btn-primary,
+.btn-icon,
+.btn-text,
+.btn-link,
+.tm-btn {
+  box-sizing: border-box;
+  appearance: none;
+  margin: 0;
+  font-family: var(--font-sans);
+  text-decoration: none;
+}
+
+.btn,
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: var(--component-control-height-md);
+  padding: 7px 14px;
+  border-radius: var(--radius);
+  box-shadow: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0;
+  cursor: pointer;
+  transition: background-color var(--component-motion-fast), border-color var(--component-motion-fast), opacity var(--component-motion-fast);
+}
+
+.btn {
+  border: 1px solid var(--component-button-border);
+  background: var(--component-button-bg);
+  color: var(--component-button-fg);
+}
+
+.btn:hover:not(:disabled) {
+  border-color: var(--component-button-border);
+  background: var(--component-button-bg-hover);
+  color: var(--component-button-fg);
+}
+
+.btn:active:not(:disabled) {
+  border-color: var(--component-button-border);
+  background: var(--component-button-bg);
+  color: var(--component-button-fg);
+}
+
+.btn-primary {
+  border: 1px solid var(--component-button-primary-bg);
+  background: var(--component-button-primary-bg);
+  color: var(--component-button-primary-fg);
+}
+
+.btn-primary:hover:not(:disabled) {
+  border-color: var(--component-button-primary-bg-hover);
+  background: var(--component-button-primary-bg-hover);
+  color: var(--component-button-primary-fg);
+}
+
+.btn-primary:active:not(:disabled) {
+  border-color: var(--component-button-primary-bg);
+  background: var(--component-button-primary-bg);
+  color: var(--component-button-primary-fg);
+}
+
+/*
+ * Figma text button: nodes 242:63219 (default) and 242:63221 (hover).
+ * Natural width is text width + 24px horizontal padding; the reference copy
+ * therefore renders at 84px without hard-coding a content-specific width.
+ */
+.btn-text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--component-control-height-md);
+  min-height: var(--component-control-height-md);
+  padding: 6px 12px;
+  border: 0;
+  border-radius: var(--radius-card);
+  background: var(--component-text-button-bg);
+  color: var(--component-text-button-fg);
+  box-shadow: none;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  cursor: pointer;
+  transition: background-color var(--component-motion-fast);
+}
+
+.btn-text:hover:not(:disabled) {
+  background: var(--component-text-button-bg-hover);
+  color: var(--component-text-button-fg);
+  cursor: pointer;
+}
+
+.btn-text:active:not(:disabled) {
+  background: var(--component-text-button-bg-hover);
+}
+
+/*
+ * Text link button. The supplied Figma node ids 242:63225 and 242:63226 are
+ * currently absent from the file, so typography and color inherit the verified
+ * text-button baseline while the underline behavior follows the user rule.
+ */
+.btn-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 24px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--component-text-button-fg);
+  box-shadow: none;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-link::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background: currentColor;
+  content: "";
+  pointer-events: none;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform var(--component-motion-fast);
+}
+
+.btn-link:hover {
+  color: var(--component-text-button-fg);
+  cursor: pointer;
+}
+
+.btn-link:hover::after,
+.btn-link:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.btn:disabled,
+.btn-primary:disabled,
+.btn-text:disabled,
+.btn-link:disabled,
+.btn-icon:disabled,
+.btn-icon[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn:focus-visible,
+.btn-primary:focus-visible,
+.btn-text:focus-visible,
+.btn-link:focus-visible,
+.btn-icon:focus-visible,
+.tm-btn:focus-visible,
+.tm-chip:focus-visible,
+.tm-input:focus-visible,
+.tm-textarea:focus-visible {
+  outline: 2px solid var(--component-focus-ring);
+  outline-offset: 2px;
+}
+
+.btn-size-sm {
+  min-height: var(--component-control-height-sm);
+  height: var(--component-control-height-sm);
+  padding-inline: 12px;
+}
+
+.btn-size-md {
+  min-height: var(--component-control-height-md);
+  height: var(--component-control-height-md);
+  padding-inline: 14px;
+}
+
+.btn > svg,
+.btn-primary > svg,
+.btn-icon > svg {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 14px;
+}
+
+.btn-icon {
+  display: inline-grid;
+  place-items: center;
+  width: var(--component-control-height-md);
+  min-width: var(--component-control-height-md);
+  height: var(--component-control-height-md);
+  min-height: var(--component-control-height-md);
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--component-button-fg);
+  box-shadow: none;
+  cursor: pointer;
+  transition: background-color var(--component-motion-fast), color var(--component-motion-fast), opacity var(--component-motion-fast);
+}
+
+.btn-icon:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: var(--component-button-bg-hover);
+  color: var(--ink);
+}
+
+.btn-icon:active:not(:disabled):not([aria-disabled="true"]) {
+  background: var(--line);
+  color: var(--ink);
+}
+
+.btn-icon.btn-size-sm {
+  width: var(--component-control-height-sm);
+  min-width: var(--component-control-height-sm);
+  height: var(--component-control-height-sm);
+  min-height: var(--component-control-height-sm);
+}
+
+.btn-icon.btn-size-md {
+  width: var(--component-control-height-md);
+  min-width: var(--component-control-height-md);
+  height: var(--component-control-height-md);
+  min-height: var(--component-control-height-md);
+}
+
+/* Modal / Dialog: only the migrated Create Topic form variant. */
+.tm-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: var(--component-overlay-bg);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  animation: tm-fade 180ms ease;
+}
+
+.tm-overlay.is-open {
+  display: flex;
+}
+
+.tm-panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 520px;
+  max-height: calc(100vh - 48px);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: var(--paper);
+  box-shadow: var(--component-dialog-shadow);
+  animation: tm-panel-in var(--component-motion-dialog);
+}
+
+.tm-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.tm-title {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.tm-close {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background-color var(--component-motion-fast), color var(--component-motion-fast);
+}
+
+.tm-close:hover,
+.tm-close:focus-visible {
+  background: var(--bg-soft);
+  color: var(--ink);
+}
+
+.tm-close:focus-visible {
+  outline: 0;
+  box-shadow: none;
+}
+
+.tm-close svg {
+  width: 18px;
+  height: 18px;
+}
+
+.tm-body {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 0;
+  padding: 20px 22px 8px;
+  overflow-y: auto;
+}
+
+.tm-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+fieldset.tm-field {
+  min-inline-size: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.tm-label-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.tm-label {
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.tm-req {
+  margin-left: 2px;
+  color: var(--state-danger);
+}
+
+.tm-opt {
+  margin-left: 4px;
+  color: var(--muted);
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+}
+
+.cf-input-wrap,
+.cf-textarea-wrap,
+.tm-count-input,
+.tm-count-textarea {
+  position: relative;
+}
+
+.tm-count-input .tm-input {
+  padding-right: 72px;
+}
+
+.tm-count-textarea .tm-textarea {
+  padding-right: 68px;
+  padding-bottom: 28px;
+}
+
+.tm-input,
+.tm-textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  transition: border-color var(--component-motion-fast), box-shadow var(--component-motion-fast);
+}
+
+.tm-textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+
+.tm-input::placeholder,
+.tm-textarea::placeholder {
+  color: var(--muted);
+}
+
+.tm-input:focus,
+.tm-textarea:focus {
+  border-color: var(--ink-soft);
+  outline: 0;
+}
+
+.tm-input:focus-visible,
+.tm-textarea:focus-visible {
+  border-color: var(--ink-soft);
+  outline: 0;
+}
+
+.tm-input.is-error,
+.tm-input.is-error:focus,
+.tm-textarea.is-error,
+.tm-textarea.is-error:focus {
+  border-color: var(--state-danger);
+}
+
+.cf-input-count,
+.cf-textarea-count {
+  position: absolute;
+  color: var(--muted-2);
+  font-family: var(--font-sans);
+  font-size: 10.5px;
+  font-variant-numeric: tabular-nums;
+  pointer-events: none;
+}
+
+.cf-input-count {
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.cf-textarea-count {
+  right: 10px;
+  bottom: 10px;
+}
+
+.cf-input-count.is-near,
+.cf-textarea-count.is-near {
+  color: var(--state-warning);
+}
+
+.cf-input-count.is-max,
+.cf-textarea-count.is-max {
+  color: var(--state-danger);
+}
+
+.tm-chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.tm-checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.tm-check {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: var(--paper);
+  color: var(--ink-soft);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color var(--component-motion-fast), border-color var(--component-motion-fast), color var(--component-motion-fast);
+}
+
+.tm-check:hover {
+  border-color: var(--muted-2);
+  background: var(--bg-soft);
+  color: var(--ink);
+}
+
+.tm-check input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tm-check-box {
+  display: grid;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  place-items: center;
+  border: 1px solid var(--muted-2);
+  border-radius: 3px;
+  background: var(--paper);
+}
+
+.tm-check-box::after {
+  width: 8px;
+  height: 4px;
+  border-bottom: 1.5px solid var(--paper);
+  border-left: 1.5px solid var(--paper);
+  content: "";
+  opacity: 0;
+  transform: translateY(-1px) rotate(-45deg);
+}
+
+.tm-check:has(input:checked) {
+  border-color: var(--accent-soft);
+  background: var(--ai-tint);
+  color: var(--ink);
+}
+
+.tm-check input:checked + .tm-check-box {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+.tm-check input:checked + .tm-check-box::after { opacity: 1; }
+.tm-check:has(input:focus-visible) { outline: 2px solid var(--component-focus-ring); outline-offset: 2px; }
+.tm-field.is-error .tm-checks { outline: 1px solid var(--state-danger); outline-offset: 4px; border-radius: var(--radius); }
+
+@media (max-width: 767px) {
+  .text-content-title { font-size: clamp(38px, 10vw, 52px); line-height: 1.08; }
+  .text-title-h2 { font-size: clamp(30px, 8vw, 36px); line-height: 1.15; }
+}
+
+.tm-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--ink-soft);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color var(--component-motion-fast), color var(--component-motion-fast), border-color var(--component-motion-fast);
+}
+
+.tm-chip .field-tag-ico {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 14px;
+}
+
+.tm-chip:hover {
+  border-color: var(--muted-2);
+  background: var(--bg-soft);
+  color: var(--ink);
+}
+
+.tm-chip:focus-visible {
+  border-color: var(--ink-soft);
+  outline: 0;
+}
+
+.tm-chip.is-active,
+.tm-chip.is-active:hover {
+  border-color: var(--muted-2);
+  background: var(--bg-soft);
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.tm-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 14px 22px 18px;
+}
+
+.tm-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--component-control-height-md);
+  padding: 0 14px;
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background-color var(--component-motion-fast), color var(--component-motion-fast), border-color var(--component-motion-fast), opacity var(--component-motion-fast);
+}
+
+.tm-btn-ghost {
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink-soft);
+}
+
+.tm-btn-ghost:hover:not(:disabled) {
+  background: var(--bg-soft);
+  color: var(--ink);
+}
+
+.tm-btn-primary {
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.tm-btn-primary:hover:not(:disabled) {
+  border-color: var(--ink-soft);
+  background: var(--ink-soft);
+}
+
+.tm-btn-danger {
+  border: 1px solid var(--state-danger);
+  background: var(--paper);
+  color: var(--state-danger);
+}
+
+.tm-btn-danger:hover:not(:disabled) {
+  border-color: var(--state-danger-strong);
+  background: var(--state-danger);
+  color: var(--paper);
+}
+
+.tm-btn-danger:focus-visible {
+  outline-color: color-mix(in srgb, var(--state-danger) 28%, transparent);
+}
+
+.tm-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Toast: the source library's success, warning and error variants. */
+.app-toast {
+  position: fixed;
+  top: 26px;
+  left: 50%;
+  z-index: 10000;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  max-width: min(560px, 90vw);
+  padding: 10px 18px 10px 14px;
+  border-radius: var(--12px);
+  background: var(--ink);
+  box-shadow: var(--component-toast-shadow);
+  color: var(--paper);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.5;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -14px);
+  transition: opacity var(--component-motion-toast), transform var(--component-motion-toast);
+}
+
+.app-toast.show {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.app-toast-ico {
+  display: inline-flex;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+}
+
+.app-toast-ico svg {
+  width: 100%;
+  height: 100%;
+}
+
+.app-toast-msg {
+  min-width: 0;
+}
+
+.app-toast.success .app-toast-ico {
+  color: var(--state-success);
+}
+
+.app-toast.warning .app-toast-ico {
+  color: var(--state-warning);
+}
+
+.app-toast.error .app-toast-ico {
+  color: var(--state-error);
+}
+
+body.has-open-dialog {
+  overflow: hidden;
+}
+
+@keyframes tm-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes tm-panel-in {
+  from { opacity: 0; transform: translateY(8px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (max-width: 599px) {
+  .tm-overlay {
+    padding: 12px;
+  }
+
+  .tm-panel {
+    max-height: calc(100vh - 24px);
+  }
+
+  .tm-header {
+    padding-inline: 16px;
+  }
+
+  .tm-body {
+    padding-inline: 16px;
+  }
+
+  .tm-footer {
+    padding-inline: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-link::after,
+  .tm-overlay,
+  .tm-panel,
+  .app-toast {
+    animation: none;
+    transition-duration: 0.01ms;
+  }
+}

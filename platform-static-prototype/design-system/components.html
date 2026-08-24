@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>组件规范 · InternInkStone Design System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&amp;family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;600;700&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared/css/tokens.css">
+  <link rel="stylesheet" href="../shared/css/base.css">
+  <link rel="stylesheet" href="../shared/css/shell.css">
+  <link rel="stylesheet" href="../shared/css/styles.css">
+  <link rel="stylesheet" href="../shared/css/design-system-overrides.css?v=20260821-5">
+  <link rel="stylesheet" href="./design-system.css?v=20260821-3">
+  <script defer src="../shared/js/components.js?v=20260821-1"></script>
+</head>
+<body>
+  <main class="ds-page">
+    <header class="ds-hero">
+      <p class="ds-eyebrow">InternInkStone</p>
+      <h1 class="ds-title">组件规范</h1>
+      <p class="ds-summary">从参考项目迁移 Buttons、Toast 与指定的“创建课题”Dialog，并按当前 Figma 证据补充文字按钮与文字链接按钮；组件样式统一绑定本项目 Token。</p>
+      <nav class="ds-module-nav" aria-label="Design System 模块">
+        <a href="./index.html">原子规范</a>
+        <a href="./components.html" aria-current="page">组件规范</a>
+      </nav>
+    </header>
+
+    <section class="ds-section" aria-labelledby="component-source">
+      <h2 id="component-source">组件来源与范围</h2>
+      <p>Buttons 与 Toast 按参考 Design System 的完整规范迁移；Modal / Dialog 仅迁移截图指定的“创建课题”表单弹窗。文字按钮依据当前 Figma 节点新增，文字链接按钮依据已明确的交互规则新增。</p>
+      <dl class="ds-component-ledger">
+        <div><dt>Buttons</dt><dd>32px / 36px、一级 / 二级 / 三级、文字按钮、文字链接、危险、禁用</dd></div>
+        <div><dt>Dialog form</dt><dd>文本输入、计数器、领域单选 chip、文本域、取消与创建</dd></div>
+        <div><dt>Toast</dt><dd>success / warning / error；顶部单实例，1.8 秒后收起</dd></div>
+      </dl>
+    </section>
+
+    <section class="ds-section" id="component-buttons" aria-labelledby="buttons-title">
+      <div class="ds-section-heading">
+        <div><p class="ds-kicker">Components</p><h2 id="buttons-title">Buttons</h2></div>
+        <p>size × hierarchy × usage</p>
+      </div>
+
+      <div class="ds-component-block">
+        <div class="ds-component-block-heading"><strong>01 · 尺寸 Size</strong><span>only two sizes</span></div>
+        <div class="ds-button-size-grid">
+          <article class="ds-component-card">
+            <p class="ds-component-kicker">Small · 32px</p>
+            <h3>二级页顶部专用</h3>
+            <div class="ds-button-preview">
+              <button class="btn btn-size-sm" type="button">返回</button>
+              <button class="btn-primary btn-size-sm" type="button">保存</button>
+              <button class="btn-icon btn-size-sm" type="button" aria-label="更多" title="更多">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="6" cy="12" r="1.6"></circle><circle cx="12" cy="12" r="1.6"></circle><circle cx="18" cy="12" r="1.6"></circle></svg>
+              </button>
+            </div>
+            <p><code>.btn-size-sm</code> · 高 32px · 文字按钮横向内边距 12px。</p>
+          </article>
+          <article class="ds-component-card">
+            <p class="ds-component-kicker">Default · 36px</p>
+            <h3>主页面与提交区域默认</h3>
+            <div class="ds-button-preview">
+              <button class="btn btn-size-md" type="button">取消</button>
+              <button class="btn-primary btn-size-md" type="button">提交</button>
+              <button class="btn-icon btn-size-md" type="button" aria-label="关闭" title="关闭">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6 L18 18 M18 6 L6 18"></path></svg>
+              </button>
+            </div>
+            <p><code>.btn-size-md</code> · 高 36px · 文字按钮横向内边距 14px。</p>
+          </article>
+        </div>
+        <div class="ds-control-specs" aria-label="按钮公共尺寸规范">
+          <span>32px / Padding X 12px</span><span>36px / Padding X 14px</span><span>Font 13px / 500</span><span>Radius 4px</span><span>Icon 14px</span>
+        </div>
+      </div>
+
+      <div class="ds-component-block">
+        <div class="ds-component-block-heading"><strong>02 · 风格层级 Hierarchy</strong><span>three action levels</span></div>
+        <div class="ds-button-tier-grid">
+          <article class="ds-component-card">
+            <p class="ds-component-kicker">Level 1 · 一级</p>
+            <h3>Primary · 墨色实心</h3>
+            <div class="ds-button-preview">
+              <button class="btn-primary btn-size-md" type="button">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5 V19 M5 12 H19"></path></svg>新建
+              </button>
+              <button class="btn-primary btn-size-md" type="button">提交</button>
+            </div>
+            <p>一个操作组原则上只保留一个一级按钮，用于新建、保存、提交或确认。</p>
+          </article>
+          <article class="ds-component-card">
+            <p class="ds-component-kicker">Level 2 · 二级</p>
+            <h3>Secondary · 白底线描</h3>
+            <div class="ds-button-preview">
+              <button class="btn btn-size-md" type="button">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M15 6 L9 12 L15 18"></path></svg>返回
+              </button>
+              <button class="btn btn-size-md" type="button">取消</button>
+            </div>
+            <p>用于辅助一级动作但仍需清晰可见的操作，可在同一操作组出现多个。</p>
+          </article>
+          <article class="ds-component-card">
+            <p class="ds-component-kicker">Level 3 · 三级</p>
+            <h3>Icon Button · 透明无文字</h3>
+            <div class="ds-button-preview">
+              <button class="btn-icon btn-size-md" type="button" aria-label="复制" title="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="8" y="8" width="11" height="11" rx="1.5"></rect><path d="M16 8 V5 H5 V16 H8"></path></svg></button>
+              <button class="btn-icon btn-size-md" type="button" aria-label="更多" title="更多"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="6" cy="12" r="1.6"></circle><circle cx="12" cy="12" r="1.6"></circle><circle cx="18" cy="12" r="1.6"></circle></svg></button>
+              <button class="btn-icon btn-size-md" type="button" aria-label="关闭" title="关闭"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6 L18 18 M18 6 L6 18"></path></svg></button>
+            </div>
+            <p>用于高频、低干扰且图标含义明确的动作；必须提供 <code>aria-label</code> 和 tooltip。</p>
+          </article>
+        </div>
+        <div class="ds-button-functional-row">
+          <div><strong>功能变体</strong><p>危险只表达不可逆风险；禁用是状态，不改变原本层级。</p></div>
+          <div class="ds-button-preview"><button class="tm-btn tm-btn-danger" type="button">删除</button><button class="btn btn-size-md" type="button" disabled>不可用</button></div>
+        </div>
+      </div>
+
+      <div class="ds-component-block">
+        <div class="ds-component-block-heading"><strong>03 · 文字类按钮 Text actions</strong><span>Figma addition</span></div>
+        <div class="ds-button-size-grid">
+          <article class="ds-component-card">
+            <p class="ds-component-kicker">Text Button · 36px</p>
+            <h3>文字按钮</h3>
+            <div class="ds-button-state-grid" aria-label="文字按钮状态示例">
+              <div class="ds-button-state"><span>Default</span><button class="btn-text" type="button">文字按钮</button></div>
+              <div class="ds-button-state"><span>Hover</span><button class="btn-text ds-preview-text-button-hover" type="button">文字按钮</button></div>
+            </div>
+            <p><code>.btn-text</code> · 高 36px · Padding X 12px · Radius 8px · Font 15px / 24px。实际 hover 时鼠标指针为 pointer。</p>
+          </article>
+          <article class="ds-component-card">
+            <p class="ds-component-kicker">Text Link</p>
+            <h3>文字链接按钮</h3>
+            <div class="ds-button-state-grid" aria-label="文字链接按钮状态示例">
+              <div class="ds-button-state"><span>Default</span><a class="btn-link" href="#component-buttons">文字链接按钮</a></div>
+              <div class="ds-button-state"><span>Hover</span><a class="btn-link ds-preview-link-button-hover" href="#component-buttons">文字链接按钮</a></div>
+            </div>
+            <p><code>.btn-link</code> · 默认无下划线；hover 与键盘 focus 时，下划线从左向右出现，鼠标指针为 pointer。</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="ds-component-block">
+        <div class="ds-component-block-heading"><strong>04 · 使用场景 Usage</strong><span>where each button goes</span></div>
+        <div class="ds-table-wrap">
+          <table class="ds-component-table">
+            <thead><tr><th>场景</th><th>尺寸</th><th>推荐组合</th><th>典型动作</th></tr></thead>
+            <tbody>
+              <tr><td>二级页顶部</td><td>32px</td><td>操作组统一 32px</td><td>返回 / 收藏 / 保存 / 更多</td></tr>
+              <tr><td>主页面 Search + Action</td><td>36px</td><td>搜索框 + 一级主动作</td><td>搜索 / 新建</td></tr>
+              <tr><td>表单与弹窗底部</td><td>36px</td><td>二级取消 + 一级提交</td><td>取消 / 创建 / 确认</td></tr>
+              <tr><td>工具栏与列表行</td><td>32px 优先</td><td>三级 Icon Button</td><td>复制 / 刷新 / 更多</td></tr>
+              <tr><td>弱操作与文内跳转</td><td>36px / 24px</td><td>文字按钮 / 文字链接按钮</td><td>查看说明 / 了解更多</td></tr>
+              <tr><td>危险确认</td><td>36px</td><td>二级取消 + 危险按钮</td><td>取消 / 删除 / 移除</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="ds-section" id="component-modal" aria-labelledby="modal-title">
+      <div class="ds-section-heading">
+        <div><p class="ds-kicker">Components</p><h2 id="modal-title">Modal / Dialog</h2></div>
+        <p>指定变体：创建课题</p>
+      </div>
+      <div class="ds-dialog-actions">
+        <button class="tm-btn tm-btn-ghost" type="button" data-ds-modal-open="ds-modal-create-topic">打开“创建课题”Dialog</button>
+        <span>支持关闭按钮、取消、遮罩点击与 Escape。</span>
+      </div>
+
+      <div class="ds-dialog-stage">
+        <form class="tm-panel" aria-label="创建课题静态示例">
+          <header class="tm-header">
+            <h3 class="tm-title">创建课题</h3>
+            <button class="tm-close" type="button" aria-label="关闭静态示例" title="关闭">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6 L18 18 M18 6 L6 18"></path></svg>
+            </button>
+          </header>
+          <div class="tm-body">
+            <div class="tm-field">
+              <div class="tm-label-row"><label class="tm-label" for="preview-topic-name">课题名称 <span class="tm-req">*</span></label></div>
+              <div class="cf-input-wrap tm-count-input"><input class="tm-input" id="preview-topic-name" type="text" value="阶段性研究计划" autocomplete="off"><span class="cf-input-count">12 / 50</span></div>
+            </div>
+            <fieldset class="tm-field ds-fieldset">
+              <legend class="tm-label">领域</legend>
+              <div class="tm-chips" role="radiogroup" aria-label="领域">
+                <button type="button" class="tm-chip is-active" role="radio" aria-checked="true" tabindex="0"><svg class="field-tag-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 L13.6 10.4 L21 12 L13.6 13.6 L12 21 L10.4 13.6 L3 12 L10.4 10.4 Z"></path></svg>通用</button>
+                <button type="button" class="tm-chip" role="radio" aria-checked="false" tabindex="-1"><svg class="field-tag-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 C16 7 8 13 17 17 M17 3 C8 7 16 13 7 17"></path><path d="M9 6 H15 M9 14 H15"></path></svg>生命科学</button>
+                <button type="button" class="tm-chip" role="radio" aria-checked="false" tabindex="-1"><svg class="field-tag-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><ellipse cx="12" cy="12" rx="9" ry="3.5"></ellipse><path d="M12 3 V21"></path></svg>地球科学</button>
+                <button type="button" class="tm-chip" role="radio" aria-checked="false" tabindex="-1"><svg class="field-tag-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3 H15 V8 L19 18 C19 20 17.5 21 16.5 21 H7.5 C6.5 21 5 20 5 18 L9 8 Z"></path><path d="M9 3 H15 M7 14 H17"></path></svg>化学</button>
+                <button type="button" class="tm-chip" role="radio" aria-checked="false" tabindex="-1"><svg class="field-tag-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 L19.5 7.5 V15.5 L12 20 L4.5 15.5 V7.5 Z"></path><circle cx="12" cy="11.5" r="1.2" fill="currentColor" stroke="none"></circle></svg>材料科学</button>
+              </div>
+            </fieldset>
+            <div class="tm-field">
+              <div class="tm-label-row"><label class="tm-label" for="preview-topic-desc">课题描述 <span class="tm-opt">选填</span></label></div>
+              <div class="cf-textarea-wrap tm-count-textarea"><textarea class="tm-textarea" id="preview-topic-desc" rows="4" placeholder="目标、关键问题或方法"></textarea><span class="cf-textarea-count">0 / 200</span></div>
+            </div>
+          </div>
+          <footer class="tm-footer">
+            <button class="tm-btn tm-btn-ghost" type="button">取消</button>
+            <button class="tm-btn tm-btn-primary" type="button">创建</button>
+          </footer>
+        </form>
+      </div>
+    </section>
+
+    <section class="ds-section" id="component-toast" aria-labelledby="toast-title">
+      <div class="ds-section-heading">
+        <div><p class="ds-kicker">Components</p><h2 id="toast-title">Toast</h2></div>
+        <p>success / warning / error</p>
+      </div>
+      <div class="ds-toast-showcase">
+        <button class="tm-btn tm-btn-ghost" type="button" data-ds-toast="success|笔记保存成功">成功 Toast</button>
+        <button class="tm-btn tm-btn-ghost" type="button" data-ds-toast="warning|知识库至多支持3层文件夹">警告 Toast</button>
+        <button class="tm-btn tm-btn-ghost" type="button" data-ds-toast="error|移动失败">失败 Toast</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="tm-overlay" id="ds-modal-create-topic" aria-hidden="true">
+    <form class="tm-panel" role="dialog" aria-modal="true" aria-labelledby="create-topic-title" data-ds-create-topic-form>
+      <header class="tm-header">
+        <h2 class="tm-title" id="create-topic-title">创建课题</h2>
+        <button class="tm-close" type="button" data-ds-modal-close aria-label="关闭" title="关闭">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6 L18 18 M18 6 L6 18"></path></svg>
+        </button>
+      </header>
+      <div class="tm-body">
+        <div class="tm-field">
+          <div class="tm-label-row"><label class="tm-label" for="create-topic-name">课题名称 <span class="tm-req">*</span></label></div>
+          <div class="cf-input-wrap tm-count-input"><input class="tm-input" id="create-topic-name" type="text" maxlength="50" placeholder="例：阶段性研究计划" autocomplete="off" required data-ds-create-topic-name><span class="cf-input-count" data-ds-create-topic-name-counter>0 / 50</span></div>
+        </div>
+        <fieldset class="tm-field ds-fieldset">
+          <legend class="tm-label">领域</legend>
+          <div class="tm-chips" role="radiogroup" aria-label="领域">
+            <button type="button" class="tm-chip is-active" role="radio" aria-checked="true" tabindex="0"><svg class="field-tag-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 L13.6 10.4 L21 12 L13.6 13.6 L12 21 L10.4 13.6 L3 12 L10.4 10.4 Z"></path></svg>通用</button>
+            <button type="button" class="tm-chip" role="radio" aria-checked="false" tabindex="-1"><svg class="field-tag-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 C16 7 8 13 17 17 M17 3 C8 7 16 13 7 17"></path><path d="M9 6 H15 M9 14 H15"></path></svg>生命科学</button>
+            <button type="button" class="tm-chip" role="radio" aria-checked="false" tabindex="-1"><svg class="field-tag-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><ellipse cx="12" cy="12" rx="9" ry="3.5"></ellipse><path d="M12 3 V21"></path></svg>地球科学</button>
+            <button type="button" class="tm-chip" role="radio" aria-checked="false" tabindex="-1"><svg class="field-tag-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3 H15 V8 L19 18 C19 20 17.5 21 16.5 21 H7.5 C6.5 21 5 20 5 18 L9 8 Z"></path><path d="M9 3 H15 M7 14 H17"></path></svg>化学</button>
+            <button type="button" class="tm-chip" role="radio" aria-checked="false" tabindex="-1"><svg class="field-tag-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 L19.5 7.5 V15.5 L12 20 L4.5 15.5 V7.5 Z"></path><circle cx="12" cy="11.5" r="1.2" fill="currentColor" stroke="none"></circle></svg>材料科学</button>
+          </div>
+        </fieldset>
+        <div class="tm-field">
+          <div class="tm-label-row"><label class="tm-label" for="create-topic-desc">课题描述 <span class="tm-opt">选填</span></label></div>
+          <div class="cf-textarea-wrap tm-count-textarea"><textarea class="tm-textarea" id="create-topic-desc" maxlength="200" rows="4" placeholder="目标、关键问题或方法" data-ds-create-topic-desc></textarea><span class="cf-textarea-count" data-ds-create-topic-desc-counter>0 / 200</span></div>
+        </div>
+      </div>
+      <footer class="tm-footer">
+        <button class="tm-btn tm-btn-ghost" type="button" data-ds-modal-close>取消</button>
+        <button class="tm-btn tm-btn-primary" type="submit" data-ds-create-topic-submit disabled>创建</button>
+      </footer>
+    </form>
+  </div>
+</body>
+</html>

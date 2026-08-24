@@ -1,0 +1,100 @@
+/*
+ * InternInkStone shared design tokens.
+ *
+ * Figma Variables below were verified on nodes 139:606 and 155:642 in file
+ * ZaggbS0TYv1ljbBzqEwc7h. Font-family and responsive tokens are project-level
+ * code decisions recorded in docs/FIGMA_VARIABLES_STYLES_IMPLEMENTATION.md.
+ */
+
+@font-face {
+  font-family: "InkStone Han Serif SC Home";
+  src: url("../assets/fonts/source-han-serif-sc/inkstone-han-serif-sc-home-600.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "InkStone Han Serif SC Home";
+  src: url("../assets/fonts/source-han-serif-sc/inkstone-han-serif-sc-home-700.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  /* Figma color Variables. */
+  --paper: #ffffff;
+  --bg: #fdfcf8;
+  --ink: #1a2332;
+  --ink-soft: #3a4556;
+  --bg-soft: #f7f4ec;
+  --bg-soft-1: #faf8f2;
+  --line: #e8e4d9;
+  --muted: #7a8394;
+  --muted-2: #a9b0bd;
+  --accent: #1554a8;
+  --accent-soft: #88addd;
+  --line-soft: #efece2;
+  --rule-soft: #efece3;
+  --dot: #ebe6da;
+  --warning-bg: #f8f1e3;
+  --warning: #a8864b;
+  --success-bg: #f1f3e8;
+  --success-soft: #a4ad7e;
+  --success: #6b7a3a;
+  --success-deep: #4d5826;
+  --ai-tint: #f5f8fc;
+  --paper-warm: var(--bg-soft);
+  --aux-cyan-3: #40b5bf;
+  --aux-violet-2: #be9bd5;
+  --aux-mint-4: #259675;
+  --warning-soft: #cba87b;
+
+  /*
+   * Project semantic colors required by the migrated component library.
+   * These are implementation tokens copied from the approved reference
+   * components, not Figma Variables from the current file.
+   */
+  --state-danger: #c03030;
+  --state-danger-strong: #9a2020;
+  --state-success: #34d399;
+  --state-warning: #fbbf24;
+  --state-error: #f87171;
+
+  /* Figma radius Variables. */
+  --radius: 4px;
+  --radius-card: 8px;
+  --12px: 12px;
+  --radius-pill: 999px;
+
+  /* Project font-family baseline copied from the approved reference project. */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Noto Sans SC", sans-serif;
+  --font-serif: "Cormorant Garamond", "Noto Serif SC", serif;
+  --font-serif-cjk: "InkStone Han Serif SC Home", "Source Han Serif SC", "Noto Serif SC", serif;
+
+  /*
+   * Responsive code tokens. These are not Figma Variables.
+   * Registered breakpoints: compact < 768px; medium 768px-1199px;
+   * wide >= 1200px. Media-query conditions stay as literal values because
+   * custom properties cannot be used as ordinary media-query conditions.
+   */
+  --layout-content-max: 1200px;
+  --layout-page-gutter: 20px;
+  --layout-section-space: 64px;
+  --layout-text-measure: 72ch;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --layout-page-gutter: 32px;
+    --layout-section-space: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --layout-page-gutter: 48px;
+    --layout-section-space: 96px;
+  }
+}

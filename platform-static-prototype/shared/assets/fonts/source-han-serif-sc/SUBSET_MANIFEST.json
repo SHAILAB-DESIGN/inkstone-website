@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-21",
+  "figma": {
+    "fileKey": "ZaggbS0TYv1ljbBzqEwc7h",
+    "rootNodeId": "198:27482",
+    "rootNodeName": "v0.2"
+  },
+  "source": {
+    "project": "Adobe Source Han Serif",
+    "version": "2.003R",
+    "repository": "https://github.com/adobe-fonts/source-han-serif",
+    "license": "SIL Open Font License 1.1",
+    "licenseFile": "LICENSE.txt",
+    "files": {
+      "600": "https://github.com/adobe-fonts/source-han-serif/blob/release/OTF/SimplifiedChinese/SourceHanSerifSC-SemiBold.otf",
+      "700": "https://github.com/adobe-fonts/source-han-serif/blob/release/OTF/SimplifiedChinese/SourceHanSerifSC-Bold.otf"
+    }
+  },
+  "build": {
+    "fontToolsVersion": "4.63.0",
+    "outputFormat": "WOFF2",
+    "familyName": "InkStone Han Serif SC Home",
+    "commonCharacters": " 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.,:;!?/\\+-_()[]{}%#&@'\"，。！？：；、·“”‘’（）【】《》〈〉—–…",
+    "notes": [
+      "Each output is a static weight instance, not a variable font.",
+      "The internal family name is renamed because Source is a Reserved Font Name under the upstream OFL license.",
+      "The common character baseline is included in both weights in addition to the exact live Figma title text."
+    ]
+  },
+  "weights": {
+    "600": {
+      "style": "SemiBold",
+      "outputFile": "inkstone-han-serif-sc-home-600.woff2",
+      "bytes": 88344,
+      "sha256": "c81b0cf6fb1f588f7fda416796a81274a5301946c81f19db9d3c37419c1166ee",
+      "glyphCount": 609,
+      "requestedCharacterCount": 183,
+      "figmaTexts": [
+        { "nodeId": "198:27560", "text": "平台核心优势" },
+        { "nodeId": "198:27599", "text": "全链贯通" },
+        { "nodeId": "198:27640", "text": "学科纵深" },
+        { "nodeId": "198:27740", "text": "产物原生" },
+        { "nodeId": "198:27788", "text": "科研证据链" },
+        { "nodeId": "198:35473", "text": "安全可控" },
+        { "nodeId": "198:35500", "text": "生态开放" },
+        { "nodeId": "198:51030", "text": "科研案例" },
+        { "nodeId": "198:51085", "text": "连接科研力量 共创科学未来" },
+        { "nodeId": "198:53305", "text": "下载 书生·端砚 共同开启科学发现的下一程" },
+        { "nodeId": "198:27736", "text": "六大\n学科领域" },
+        { "nodeId": "198:35633", "text": "科研基座" },
+        { "nodeId": "198:43321", "text": "SCP" },
+        { "nodeId": "198:43330", "text": "Intern-S2" },
+        { "nodeId": "198:43339", "text": "World Model" },
+        { "nodeId": "198:53298", "text": "让你的科研课题连接更多能力，让专业资源创造更大价值，" },
+        { "nodeId": "198:53299", "text": "一起拓展科学发现的边界" }
+      ]
+    },
+    "700": {
+      "style": "Bold",
+      "outputFile": "inkstone-han-serif-sc-home-700.woff2",
+      "bytes": 75108,
+      "sha256": "c3fd1637bd66c316a217bd096e3a2399b0c04a240a5280d713e101e46add9640",
+      "glyphCount": 563,
+      "requestedCharacterCount": 155,
+      "figmaTexts": [
+        { "nodeId": "198:27527", "text": "端到端全链路 AI 科研工作台" },
+        { "nodeId": "198:27542", "text": "多学科专业能力\n围绕科研任务\n按需调用" },
+        { "nodeId": "198:27553", "text": "一个平台\n从科学问题\n推进到实验验证" },
+        { "nodeId": "198:27556", "text": "每一步有据可查\n每个结论都能复核" }
+      ]
+    }
+  }
+}

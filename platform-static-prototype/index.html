@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="书生·端砚——端到端全链路 AI 科研工作台">
+  <title>书生·端砚｜AI 科研工作台</title>
+  <link rel="icon" href="shared/assets/logos/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="shared/assets/fonts/source-han-serif-sc/inkstone-han-serif-sc-home-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="shared/css/tokens.css?v=20260824-home76">
+  <link rel="stylesheet" href="shared/css/base.css?v=20260824-home76">
+  <link rel="stylesheet" href="shared/css/shell.css?v=20260824-home76">
+  <link rel="stylesheet" href="shared/css/styles.css?v=20260824-home76">
+  <link rel="stylesheet" href="shared/css/design-system-overrides.css?v=20260824-home76">
+  <script src="shared/js/site-links.js?v=20260824-home76" defer></script>
+  <script src="shared/js/shell.js?v=20260824-home76" defer></script>
+</head>
+<body class="site-shell">
+  <header class="site-header">
+    <button class="site-brand-button" type="button" data-refresh-page aria-label="刷新书生·端砚官网">
+      <img src="shared/assets/logos/duanyan-default.svg" alt="" width="120" height="32">
+    </button>
+    <nav class="site-nav" data-site-nav aria-label="官网导航">
+      <button class="btn-text" type="button" data-anchor-id="home-advantages">平台核心优势</button>
+      <button class="btn-text" type="button" data-anchor-id="home-research-foundation">科研基座</button>
+      <button class="btn-text" type="button" data-anchor-id="home-research-cases">科研成果</button>
+      <button class="btn-text" type="button" data-anchor-id="home-cooperation">合作共建</button>
+      <button class="btn-text" type="button" data-anchor-id="home-downloads">下载客户端</button>
+    </nav>
+    <a class="btn-primary site-header-action" href="https://discovery.intern-ai.org.cn/" target="_blank" rel="noopener noreferrer">在线使用</a>
+    <button class="btn-icon site-menu-button" type="button" data-site-menu aria-expanded="false" aria-label="打开导航菜单">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+    </button>
+  </header>
+  <main class="site-main">
+    <iframe class="site-frame" data-home-frame src="tabs/home/index.html?embedded=1&amp;v=20260824-home88" title="书生·端砚官网 Home"></iframe>
+  </main>
+
+  <div class="tm-overlay" id="cooperation-dialog" aria-hidden="true">
+    <form class="tm-panel cooperation-panel" role="dialog" aria-modal="true" aria-labelledby="cooperation-title" aria-describedby="cooperation-form-error" data-cooperation-form novalidate>
+      <header class="tm-header">
+        <h2 class="tm-title" id="cooperation-title">申请合作</h2>
+        <button class="tm-close" type="button" data-dialog-close aria-label="关闭申请合作表单">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+        </button>
+      </header>
+      <div class="tm-body">
+        <div class="cooperation-grid">
+          <div class="tm-field"><label class="tm-label" for="cooperation-name">姓名 <span class="tm-req">*</span></label><input class="tm-input" id="cooperation-name" name="name" required autocomplete="name"></div>
+          <div class="tm-field"><label class="tm-label" for="cooperation-phone">手机号 <span class="tm-req">*</span></label><input class="tm-input" id="cooperation-phone" name="phone" type="tel" required autocomplete="tel"></div>
+          <div class="tm-field"><label class="tm-label" for="cooperation-org">学校/单位 <span class="tm-req">*</span></label><input class="tm-input" id="cooperation-org" name="organization" required autocomplete="organization"></div>
+          <div class="tm-field"><label class="tm-label" for="cooperation-position">职位 <span class="tm-req">*</span></label><input class="tm-input" id="cooperation-position" name="position" required autocomplete="organization-title"></div>
+        </div>
+        <fieldset class="tm-field">
+          <legend class="tm-label">研究方向 <span class="tm-req">*</span></legend>
+          <div class="tm-chips" role="radiogroup" aria-label="研究方向" aria-required="true">
+            <button class="tm-chip is-active" type="button" role="radio" aria-checked="true">生命科学</button>
+            <button class="tm-chip" type="button" role="radio" aria-checked="false" tabindex="-1">地球科学</button><button class="tm-chip" type="button" role="radio" aria-checked="false" tabindex="-1">物质科学</button><button class="tm-chip" type="button" role="radio" aria-checked="false" tabindex="-1">神经科学</button><button class="tm-chip" type="button" role="radio" aria-checked="false" tabindex="-1">空间科学</button><button class="tm-chip" type="button" role="radio" aria-checked="false" tabindex="-1">物理科学</button><button class="tm-chip" type="button" role="radio" aria-checked="false" tabindex="-1">数学</button><button class="tm-chip" type="button" role="radio" aria-checked="false" tabindex="-1">化学</button><button class="tm-chip" type="button" role="radio" aria-checked="false" tabindex="-1">其他</button>
+          </div>
+        </fieldset>
+        <div class="tm-field"><label class="tm-label" for="research-content">具体研究内容 <span class="tm-opt">选填</span></label><textarea class="tm-textarea" id="research-content" name="researchContent" rows="3"></textarea></div>
+        <fieldset class="tm-field" data-method-field aria-required="true">
+          <legend class="tm-label">希望合作方式 <span class="tm-req">*</span></legend>
+          <div class="tm-checks">
+            <label class="tm-check"><input type="checkbox" name="cooperationMethod" value="联合课题研究"><span class="tm-check-box" aria-hidden="true"></span>联合课题研究</label>
+            <label class="tm-check"><input type="checkbox" name="cooperationMethod" value="科研资源接入"><span class="tm-check-box" aria-hidden="true"></span>科研资源接入</label>
+            <label class="tm-check"><input type="checkbox" name="cooperationMethod" value="其他"><span class="tm-check-box" aria-hidden="true"></span>其他</label>
+          </div>
+        </fieldset>
+        <div class="tm-field"><label class="tm-label" for="cooperation-content">具体可合作内容 <span class="tm-opt">选填</span></label><textarea class="tm-textarea" id="cooperation-content" name="cooperationContent" rows="3"></textarea></div>
+        <p class="tm-error-message" id="cooperation-form-error" data-form-error role="alert"></p>
+      </div>
+      <footer class="tm-footer"><button class="tm-btn tm-btn-ghost" type="button" data-dialog-close>取消</button><button class="tm-btn tm-btn-primary" type="submit">提交申请</button></footer>
+    </form>
+  </div>
+  <div class="app-toast warning" id="shell-toast" role="status" aria-live="polite"></div>
+</body>
+</html>
