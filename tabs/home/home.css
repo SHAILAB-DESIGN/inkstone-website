@@ -393,9 +393,10 @@ img { max-width: 100%; }
   .standalone-header { grid-template-columns: 1fr auto; padding-inline: 12px; }.standalone-brand { margin: 0; }.standalone-nav { display: none; }.standalone-header > .btn-primary { margin: 0; }
   .home-rail { border-inline: 0; }.section-content { padding-inline: 20px; }.section-heading, .section-heading.compact { margin-bottom: 38px; }.section-heading h2, .downloads-heading h2 { font-size: 34px; }.section-heading p, .downloads-heading p { font-size: 15px; }
   .hero-section { min-height: 940px; }.hero-introduction { height: 420px; padding-top: 64px; }.hero-eyebrow { margin-bottom: 28px; font-size: 11px; }.hero-introduction h1 { font-size: clamp(40px, 11vw, 54px); line-height: 1.16; letter-spacing: 0; white-space: normal; }.hero-introduction p { margin-block: 26px; font-size: 15px; line-height: 1.65; }.hero-stage { top: 420px; width: 1440px; height: 860px; transform: translateX(-50%) scale(.4305556); transform-origin: top center; }
-  .feature-grid { grid-template-columns: 1fr; }
-  .feature-card { min-height: 270px; }
-  .feature-card > div { padding-top: 106px; }
+  .feature-grid { grid-template-columns: 1fr; gap: 24px; }
+  .feature-card { min-height: 200px; }
+  .feature-card > div { padding-top: 80px; }
+  .feature-card img { left: 24px; }
   .workflow-section .section-content { padding-inline: 0; }
   .security-section .section-content { padding-inline: 20px; }
   .discipline-layout { display: block; }.subject-orbit { width: 360px; height: 360px; margin: 0 auto 40px; transform: scale(.8); }.discipline-streams { margin-inline: -20px; }.discipline-stream h3 { padding-inline: 20px; }.right-fade::after { width: 80px; }
@@ -790,6 +791,7 @@ img { max-width: 100%; }
 @media (max-width: 767px) {
   .discipline-layout { display: block; }
   .subject-scaler { width: 100%; margin: 0 auto 36px; }
+  .subject-orbit-exact { transform: translateX(-50%) scale(var(--diagram-scale, 1)) translateX(24px); }
   .subject-tail { display: none; }
   .ecosystem-section .section-content { min-height: 620px; }
 }
@@ -960,8 +962,8 @@ img { max-width: 100%; }
   .footer-brand { margin: 0 0 0 -6px; }
 }
 
-/* Mobile foundation handoff: copy flows directly into the three capability cards. */
-@media (max-width: 767px) {
+/* Compact foundation handoff: below the full desktop composition, copy flows directly into the capability cards. */
+@media (max-width: 1199px) {
   .foundation-banner {
     height: auto;
     min-height: 0;
@@ -969,7 +971,7 @@ img { max-width: 100%; }
   .foundation-banner-inner {
     height: auto;
     min-height: 0;
-    padding: 64px 24px 32px;
+    padding: 64px 32px 32px;
   }
   .foundation-copy {
     position: relative;
@@ -986,4 +988,8 @@ img { max-width: 100%; }
     padding-bottom: 52px;
   }
   .capability-content > .section-heading { display: none; }
+}
+
+@media (max-width: 767px) {
+  .foundation-banner-inner { padding-inline: 24px; }
 }
