@@ -39,7 +39,7 @@ platform-static-prototype/
 │   └── assets/
 │       ├── common/
 │       ├── logos/                     # 官网 logo、favicon
-│       └── orgs/partners/             # 合作机构 logo，按 line1 / line2 分行
+│       └── orgs/partners/             # 合作机构 logo，按 line1 / line2 / line3 分行
 └── tabs/
     └── home/
         ├── index.html                 # Home 独立入口
@@ -51,7 +51,7 @@ platform-static-prototype/
 
 `shared/js/standalone-redirect.js` 与 `shared/js/module-runtime.js` 当前仍未创建；Home 自己处理独立打开兼容和私有交互，不依赖这两个规划文件。
 
-Home 当前资源清单由 `tabs/home/build-asset-manifest.ps1` 从正式资源目录重建：共 221 个运行时资产，其中 211 个为 Figma 导出、10 个为用户提供的科研案例 PNG。`figma-assets.manifest.json` 另登记 `image-chain01`—`image-chain07` 的组件集、变体、外层/内部节点和自然画布；38 个合作机构 Logo 不计入 Home 私有 manifest，由 `data/partner-logos.data.js` 按 `line1-` 16 个、`line2-` 22 个引用。
+Home 当前资源清单由 `tabs/home/build-asset-manifest.ps1` 从正式资源目录重建：共 221 个运行时资产，其中 211 个为 Figma 导出、10 个为用户提供的科研案例 PNG。`figma-assets.manifest.json` 另登记 `image-chain01`—`image-chain07` 的组件集、变体、外层/内部节点和自然画布；38 个合作机构 Logo 不计入 Home 私有 manifest，资源文件按展示行直接命名为 `line1-` 12 个、`line2-` 12 个、`line3-` 14 个，由 `data/partner-logos.data.js` 逐行引用。
 
 ## 查看方式
 

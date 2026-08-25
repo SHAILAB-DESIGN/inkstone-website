@@ -205,7 +205,7 @@
     } else window.addEventListener("resize", updateResourceMarquee, { passive: true });
   });
 
-  const partnerData = window.HomePartnerLogos || { line1: [], line2: [] };
+  const partnerData = window.HomePartnerLogos || { line1: [], line2: [], line3: [] };
   const partnerPixelsPerSecond = 22;
   document.querySelectorAll("[data-partner-line]").forEach((track) => {
     const logos = partnerData[track.dataset.partnerLine] || [];
@@ -213,14 +213,24 @@
     [...logos, ...logos].forEach((logo, index) => {
       const item = document.createElement("div");
       item.className = "partner-logo";
+      item.dataset.orgName = logo.name;
       if (index >= logos.length) item.setAttribute("aria-hidden", "true");
+      else {
+        item.tabIndex = 0;
+        item.setAttribute("role", "img");
+        item.setAttribute("aria-label", logo.name);
+      }
       const image = document.createElement("img");
       image.src = logo.src;
-      image.alt = index < logos.length ? logo.name : "";
+      image.alt = "";
       image.width = 60;
       image.height = 60;
       image.loading = index < 8 ? "eager" : "lazy";
-      item.append(image);
+      const name = document.createElement("span");
+      name.className = "partner-logo-name";
+      name.textContent = logo.name;
+      name.setAttribute("aria-hidden", "true");
+      item.append(image, name);
       fragment.append(item);
     });
     track.replaceChildren(fragment);
@@ -290,48 +300,15 @@
     if (section) sectionObserver.observe(section);
   });
 
-  /* Evidence tabs: the fill and automatic change share the same WAAPI clock. */
-  const evidenceSection = document.querySelector(".evidence-section");
+  /* Evidence tabs: user-controlled selection only. */
   const evidenceTabList = document.querySelector(".evidence-tabs");
   const evidenceTabs = Array.from(document.querySelectorAll(".evidence-tab"));
   const evidencePanels = Array.from(document.querySelectorAll(".evidence-panel"));
   const evidenceMobileSummary = document.querySelector("[data-evidence-mobile-summary]");
   const evidenceMobileDescription = evidenceMobileSummary?.querySelector("p");
-  const evidenceMobileFill = evidenceMobileSummary?.querySelector("i > b");
   const evidenceMobileQuery = window.matchMedia("(max-width: 767px)");
   let evidenceIndex = 0;
-  let progressAnimation = null;
-  let evidenceVisible = false;
   evidenceTabList?.setAttribute("aria-orientation", evidenceMobileQuery.matches ? "horizontal" : "vertical");
-
-  function cancelEvidenceClock() {
-    if (progressAnimation) progressAnimation.cancel();
-    progressAnimation = null;
-  }
-
-  function startEvidenceClock() {
-    cancelEvidenceClock();
-    if (reducedMotion.matches || !evidenceVisible || document.hidden || !evidenceTabs.length) return;
-    const fill = evidenceMobileQuery.matches ? evidenceMobileFill : evidenceTabs[evidenceIndex].querySelector("i > b");
-    if (!fill) return;
-    const animation = fill.animate([{ transform: "scaleX(0)" }, { transform: "scaleX(1)" }], { duration: 5000, easing: "linear", fill: "forwards" });
-    progressAnimation = animation;
-    animation.finished.then(() => {
-      if (progressAnimation === animation && animation.playState === "finished") {
-        selectEvidence((evidenceIndex + 1) % evidenceTabs.length, false);
-      }
-    }).catch(() => {});
-  }
-
-  function pauseEvidenceClock() {
-    progressAnimation?.pause();
-  }
-
-  function resumeEvidenceClock() {
-    if (!evidenceVisible || document.hidden || reducedMotion.matches) return;
-    if (progressAnimation?.playState === "paused") progressAnimation.play();
-    else if (!progressAnimation) startEvidenceClock();
-  }
 
   function selectEvidence(index, focusTab = false) {
     evidenceIndex = (index + evidenceTabs.length) % evidenceTabs.length;
@@ -340,20 +317,29 @@
       tab.classList.toggle("is-active", active);
       tab.setAttribute("aria-selected", String(active));
       tab.tabIndex = active ? 0 : -1;
-      const fill = tab.querySelector("i > b");
-      if (fill) fill.style.transform = "scaleX(0)";
       if (active && focusTab) tab.focus();
       if (active && evidenceMobileQuery.matches) tab.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
     });
-    if (evidenceMobileFill) evidenceMobileFill.style.transform = "scaleX(0)";
     if (evidenceMobileDescription) evidenceMobileDescription.textContent = evidenceTabs[evidenceIndex].querySelector("span")?.textContent || "";
     evidenceTabList?.setAttribute("aria-orientation", evidenceMobileQuery.matches ? "horizontal" : "vertical");
     evidencePanels.forEach((panel, panelIndex) => {
       const active = panelIndex === evidenceIndex;
       panel.hidden = !active;
       panel.classList.toggle("is-active", active);
+      if (!active) return;
+      const image = panel.querySelector("[data-evidence-image]");
+      if (!image || image.dataset.requested === "true") return;
+      image.dataset.requested = "true";
+      image.addEventListener("load", () => {
+        image.hidden = false;
+        panel.classList.remove("is-image-missing");
+      }, { once: true });
+      image.addEventListener("error", () => {
+        image.hidden = true;
+        panel.classList.add("is-image-missing");
+      }, { once: true });
+      image.src = image.dataset.src;
     });
-    startEvidenceClock();
   }
 
   evidenceTabs.forEach((tab, index) => {
@@ -367,14 +353,8 @@
       if (next !== null) { event.preventDefault(); selectEvidence(next, true); }
     });
   });
-  const evidenceVisibility = new IntersectionObserver(([entry]) => {
-    evidenceVisible = entry.isIntersecting;
-    if (evidenceVisible) resumeEvidenceClock(); else pauseEvidenceClock();
-  }, { threshold: .2 });
-  if (evidenceSection) evidenceVisibility.observe(evidenceSection);
-  document.addEventListener("visibilitychange", () => { if (document.hidden) pauseEvidenceClock(); else resumeEvidenceClock(); });
-  reducedMotion.addEventListener?.("change", startEvidenceClock);
   evidenceMobileQuery.addEventListener?.("change", () => selectEvidence(evidenceIndex));
+  selectEvidence(evidenceIndex);
 
   /* Research cases consume the local static dataset. */
   const caseData = window.HomeResearchCases || [];

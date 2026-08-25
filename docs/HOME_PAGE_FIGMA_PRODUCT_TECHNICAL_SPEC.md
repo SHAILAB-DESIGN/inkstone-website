@@ -51,7 +51,7 @@
 | 10 | `198:35625` | 科研基座banner | `6876.25 / 464` | 代码网格底纹、两张科研装饰图、居中说明卡 |
 | 11 | `198:35635` | 科研基座能力 | `7340.25 / 732` | SCP、Intern-S2、World Model 三列能力卡 |
 | 12 | `198:51027` | 科研案例 | `8072.25 / 951` | 左侧案例列表、右侧案例详情和主图 |
-| 13 | `198:51082` | 合作共建 | `9023.25 / 810` | 标题、两排机构 Logo、点阵合作 CTA |
+| 13 | `198:51082` | 合作共建 | `9023.25 / 810` | 标题、三排机构 Logo、点阵合作 CTA |
 | 14 | `198:53303` | 下载客户端 | `9833.25 / 416` | 标题与 5 个下载入口 |
 | 15 | `198:53333` | footer | `10249.25 / 302` | 品牌、4 组链接、公众号二维码、备案和协议 |
 
@@ -273,7 +273,7 @@ Figma 中“全链贯通”“安全可控”“科研基座能力”和合作 C
 | `CapabilityGrid` / `CapabilityCard` | SCP / Intern-S2 / World Model | 三列布局、能力条目和状态图标 |
 | `ResearchFoundationStage` | 科研基座 Banner + 能力 | 相邻文档流、Banner 同步离场、能力区顺序进入 |
 | `CaseShowcase` / `CaseTabs` | 科研案例 | 10 个案例、active、详情标题、主图、联合单位和键盘切换 |
-| `PartnerLogoWall` / `PartnerLogoTile` | 合作共建 | 两排无缝循环、双侧遮罩、统一容器和 60×60px Logo |
+| `PartnerLogoWall` / `PartnerLogoTile` | 合作共建 | 三排无缝循环、双侧遮罩、统一容器和 60×60px Logo |
 | `CooperationCTA` / `CooperationFormSchema` | 合作共建尾部 | 点阵背景、申请合作按钮、字段定义、校验和 shell 弹窗请求 |
 | `DownloadGrid` / `DownloadCard` | 下载客户端 | 平台图标、平台名、架构/状态说明 |
 | `SiteFooter` / `FooterLinkGroup` | Footer | 品牌、链接组、二维码、法律信息重排 |
@@ -398,13 +398,13 @@ manifest 必须为每个 `image-chain` 状态保留外层节点、内部图示�
 
 `shared/assets/logos/书生logo.png` 是 108px 品牌图标，不默认替换 Figma 下载卡中的网页版图标；两者需要先做视觉核对。
 
-合作机构 Logo 不属于上述 25 个 `image-` 图层。现已放入 `shared/assets/orgs/partners/`：共 38 个 SVG，其中 `line1-` 16 个、`line2-` 22 个；全部文件都符合 `^line[12]-.+\.svg$`，XML 可解析，未发现 `<script>`、`foreignObject` 或 HTTP 外链。`PartnerLogoTile` 只引用该目录，不把机构 Logo 塞进 Home 通用图片目录。
+合作机构 Logo 不属于上述 25 个 `image-` 图层。现已放入 `shared/assets/orgs/partners/`：共 38 个 SVG，其中 `line1-` 12 个、`line2-` 12 个、`line3-` 14 个；全部文件都符合 `^line[123]-.+\.svg$`，XML 可解析，未发现 `<script>`、`foreignObject` 或 HTTP 外链。`PartnerLogoTile` 只引用该目录，不把机构 Logo 塞进 Home 通用图片目录。
 
 分行与数据规则固定如下：
 
-1. 文件名以 `line1-` 开头的 Logo 进入第一行，以 `line2-` 开头的 Logo 进入第二行；前缀是布局数据，不参与可见机构名称和 `alt`。
-2. 每行默认按完整文件名做 `zh-CN` 自然排序，结果写入 Home 私有 `tabs/home/data/partner-logos.data.js`。浏览器运行时不扫描目录；后续若要精确指定顺序，可只调整数据数组，不重命名 SVG 或逐个修改 DOM。
-3. 不匹配两个前缀之一的新增文件视为未分配资源，资源检查必须报错，不能默默塞入任意一行。marquee 的第二份循环内容由组件克隆数据并设 `aria-hidden`，源数组不重复维护。
+1. 文件名以 `line1-`、`line2-`、`line3-` 开头的 Logo 分别进入第一、第二、第三行；前缀是布局数据，不参与可见机构名称和 `alt`。
+2. 三行固定为 12、12、14 个互不重复的机构，顺序写入 Home 私有 `tabs/home/data/partner-logos.data.js`。浏览器运行时不扫描目录；后续若要精确调整顺序，应同步修改数据数组及对应文件前缀。
+3. 不匹配三个前缀之一的新增文件视为未分配资源，资源检查必须报错，不能默默塞入任意一行。marquee 的第二份循环内容由组件克隆数据并设 `aria-hidden`，源数组不重复维护。
 4. 当前 38 个 SVG 总计约 9.12MiB，其中 24 个包含嵌入式 image 数据。浏览器对重复 marquee 的同 URL 会复用网络缓存，但首屏传输仍需关注；正式上线前保留这些原始文件，另做无损 SVG 优化或 60px 显示所需的 2x 运行时衍生物，并在截图对照通过后让数据文件引用优化版本，不直接覆盖用户提供的源 Logo。
 
 ### 8.5 科研案例补充素材盘点与迁入方案
@@ -457,7 +457,7 @@ manifest 必须为每个 `image-chain` 状态保留外层节点、内部图示�
 | 科研基座 Banner | 按 Banner→能力的正常文档流滚动；中心卡 + 两张视差图 | 保持正常文档流，装饰图缩放、中心卡流式 | 保持 Banner→能力正常文档流展示；网格仍填满 Banner |
 | 三项基座能力 | 3 列 | 2 + 1 | 单列；条目不压缩成难读小字 |
 | 科研案例 | 左侧 10 项 Tab + 右侧详情 | Tab 置顶并换行/分列，详情下置 | Tab 纵向列表或紧凑两列换行，详情单列，主图等比缩放；不把整页带出横向滚动 |
-| 合作 Logo | 两排无缝横向循环，双侧渐隐 | 降低速度并保持双侧渐隐 | 保持自动循环；减少动态模式下停止循环并改为可换行静态 Logo 列表 |
+| 合作 Logo | 三排无缝横向循环，双侧渐隐 | 降低速度并保持双侧渐隐 | 保持自动循环；减少动态模式下停止循环并改为可换行静态 Logo 列表 |
 | 下载卡 | 5 张并排 | 3 + 2 | 1 或 2 列，以 160px 最小可读尺寸决定 |
 | Footer | 品牌 + 4 列链接 | 2 列链接 | 单列/折行，备案和协议上下排列 |
 
@@ -589,9 +589,9 @@ Hero 拆成 `HeroIntroduction`、`HeroScreenStage` 和 3 个 `HeroDecorationCard
 
 ### 10.13 合作共建
 
-机构 Logo 统一放在 `shared/assets/orgs/partners/`。实现时从静态数据文件按前缀分组：`line1-` 第一行、`line2-` 第二行；当前盘点分别为 16 和 22 个，前缀去除后作为默认机构名 / `alt`。`PartnerLogoTile` 是统一容器组件：外框尺寸、背景、圆角、描边和间距由组件控制，内部图片盒固定 `60 × 60px`、`object-fit: contain`；纯重复轨道副本设空 alt / `aria-hidden`。
+机构 Logo 统一放在 `shared/assets/orgs/partners/`。实现时从静态数据文件按前缀分组：`line1-`、`line2-`、`line3-` 分别进入第一、第二、第三行；当前盘点为 12、12、14 个，前缀去除后作为默认机构名 / `alt`。`PartnerLogoTile` 是统一容器组件：外框尺寸、背景、圆角、描边和间距由组件控制，内部图片盒固定 `60 × 60px`、`object-fit: contain`；纯重复轨道副本设空 alt / `aria-hidden`。
 
-Logo wall 使用两条可反向或错速的无缝 `MarqueeTrack`，两侧通过 mask 渐隐；周期建议 28–40s，按轨道实际宽度计算恒定像素速度。hover、focus、文档隐藏时暂停，减少动态模式改为静态可换行 Logo 列表。mask 属于 viewport，不覆盖可聚焦内容，也不能让 marquee 产生页面根横向溢出。
+Logo wall 使用三条可反向或错速的无缝 `MarqueeTrack`，两侧通过 mask 渐隐；周期按轨道实际宽度计算恒定像素速度。任一卡片 hover 或键盘 focus 时，对应轨道暂停；卡片内 Logo 图片隐藏并显示文件名前缀后的机构名称。名称态以 Figma `361:39144` 为基准，复用 `--bg-soft`、`--ink` 和 Body/Compact：13px / 400 / 1.65、水平垂直居中，离开卡片后恢复 Logo 与滚动。文档隐藏时暂停，减少动态模式改为静态可换行 Logo 列表。mask 属于 viewport，不覆盖可聚焦内容，也不能让 marquee 产生页面根横向溢出。
 
 合作共建尾部 `CooperationCTA` 只保留点阵背景图片层，容器背景色必须透明，不做白色填充；“申请合作”按钮仅显示文字，不附加箭头图标。CTA 是合作共建内容的最后一个元素，其下边缘直接贴合模块底部分割线，`section-content` 不得以 `min-height`、底部 padding 或空占位继续撑出间距。
 
@@ -664,7 +664,7 @@ Footer 中黑色文字链接全部作为页内锚点：平台核心能力→`hom
 - Figma 标题实际命中 `InkStone Han Serif SC Home` 页面子集；Noto Serif SC 只作为失败/缺字 fallback，字体许可与 manifest 随资产提交，冷缓存时无永久不可见文字。
 - 实施时 manifest 中全部 `image-` 图层都有明确去向；2026-08-21 修正快照为 32 个，其中必须包含组件集 `168:1325` 的 `image-chain01`—`image-chain07`，最终数量仍以同次 Figma 盘点为准，临时 Figma URL 不进入代码。
 - Navigation / Footer / favicon 使用仓库内既有 Logo 文件；点击 Navigation Logo 会刷新当前页面，Footer Logo 保持非刷新入口。
-- 合作机构 Logo 单独进入 `shared/assets/orgs/partners/`，不污染 `shared/assets/common/`；`line1-` 进入第一行、`line2-` 进入第二行，当前 16 / 22 个文件全部被分配，每个可见图盒为 60×60px。
+- 合作机构 Logo 单独进入 `shared/assets/orgs/partners/`，不污染 `shared/assets/common/`；`line1-`、`line2-`、`line3-` 分别进入三行，当前 12 / 12 / 14 个文件全部被分配且三行无重复，每个可见图盒为 60×60px。
 - 9 个代码化复合图示的文本仍可选择、缩放和被辅助技术读取；节点包围盒、连线端点、圆心、描边与 Figma 自然尺寸基线逐项对齐。安全可控与生态开放整图 PNG 均提供完整替代文本。
 - 9 个代码化复合图示和两张整图 PNG 在中等/紧凑宽度使用统一比例整体缩放，不存在局部横向滚动、非等比拉伸或开发自行重排拓扑；证据链 7 个状态逐项完成截图对照。
 - 页面根无非预期横向滚动；流程图、证据链 Tab 和科研案例 Tab 均不依赖局部横向滚动。学科资源轨道与 Logo wall 的 marquee 必须在自身 viewport 裁切。
@@ -676,7 +676,7 @@ Footer 中黑色文字链接全部作为页内锚点：平台核心能力→`hom
 - 证据链 7 个 Tab 与 Figma 状态一一对应；active 描述下方存在浅色 track 和蓝色 fill，fill 与同一个 5 秒时钟从 0% 同步到 100%。点击重置、离屏 / 隐藏 / focus 暂停后，读秒与蓝线位置无漂移且不存在重复 timer。
 - 科研基座 Banner 在所有断点均随页面正常滚动；能力区开始进入视窗时 Banner 同步离场，不会吸顶等待能力区滚动到底。
 - 科研案例 10 个 Tab 与 10 份数据、10 张图片稳定配对，切换无布局跳动；运行时不引用 Downloads 绝对路径。
-- Logo wall 无缝循环且两侧渐隐；重复集合不被读屏重复朗读，减少动态模式停止循环。
+- Logo wall 无缝循环且两侧渐隐；hover / focus 卡片时轨道暂停、Logo 切换为对应机构名称，离开后恢复；重复集合不被读屏重复朗读，减少动态模式停止循环。
 - 合作申请由 shell 级 Design System Dialog 覆盖 Navigation 和 Home，必填 / 单选 / 多选校验正确，关闭后焦点返回触发按钮；接口未确认时不发送个人信息。
 - 下载网页版卡片具备 default / hover / focus 状态并打开正确地址；Windows 卡无 hover、无指针、无 tabindex 和点击处理。
 - 200% 文本缩放时核心内容与操作仍可访问。
