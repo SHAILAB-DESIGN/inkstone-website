@@ -878,13 +878,54 @@ img { max-width: 100%; }
   .download-grid { grid-template-columns: 160px; }
 }
 
-/* Current Figma cooperation CTA and footer (198:51082 / 198:53333). */
+/* Current Figma cooperation CTA and footer (410:5122 / 198:53333). */
 .cooperation-cta {
-  min-height: 188px;
-  padding: 42px 58px;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  min-height: 300px;
+  padding: 0;
+  overflow: hidden;
+  isolation: isolate;
 }
-.cooperation-cta h3 { margin: 0; color: var(--ink); font: 600 24px/32px var(--font-serif-cjk); letter-spacing: .48px; }
-.cooperation-cta .btn-primary { min-width: auto; }
+.cooperation-cta-copy {
+  position: absolute;
+  z-index: 2;
+  top: 60px;
+  left: 57px;
+  width: min(630px, calc(100% - 360px));
+}
+.cooperation-cta h3 {
+  display: flex;
+  margin: 0;
+  color: var(--ink);
+  font: 600 24px/32px var(--font-serif-cjk);
+  letter-spacing: .48px;
+  flex-direction: column;
+  gap: 4px;
+}
+.cooperation-cta h3 span { white-space: nowrap; }
+.cooperation-cta-art {
+  position: absolute;
+  z-index: 0;
+  top: -105.9414px;
+  left: 50%;
+  display: block;
+  width: 887.8828px;
+  height: 887.8828px;
+  max-width: none;
+  object-fit: cover;
+  mix-blend-mode: darken;
+  pointer-events: none;
+  user-select: none;
+}
+.cooperation-cta .btn-primary {
+  position: absolute;
+  z-index: 2;
+  top: 76px;
+  right: 81px;
+  min-width: auto;
+}
 
 .home-footer { border-top: 0; }
 .footer-content {
@@ -932,9 +973,20 @@ img { max-width: 100%; }
 .footer-policy-link:hover { color: var(--ink, #1a2332); }
 
 @media (max-width: 767px) {
-  .cooperation-cta { min-height: 220px; padding: 34px 24px; }
-  .cooperation-cta h3 { font-size: 20px; line-height: 1.45; white-space: normal; }
-  .cooperation-copy-break { display: none; }
+  .cooperation-cta {
+    display: flex;
+    min-height: 320px;
+    padding: 40px 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .cooperation-cta-copy { position: relative; top: auto; left: auto; width: 100%; }
+  .cooperation-cta h3 { display: block; font-size: 20px; line-height: 1.45; white-space: normal; }
+  .cooperation-cta h3 span { display: inline; white-space: normal; }
+  .cooperation-cta-art { top: 54px; left: 20%; width: 520px; height: 520px; }
+  .cooperation-cta .btn-primary { position: relative; top: auto; right: auto; }
   .footer-content { grid-template-columns: 1fr; padding: 48px 24px 32px; gap: 36px; }
   .footer-links { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; }
   .footer-meta { padding: 0 24px 20px; align-items: flex-start; gap: 4px; flex-direction: column; }
