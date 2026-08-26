@@ -27,6 +27,18 @@
   let shellCooperationRequestId = "";
   let shellCooperationRetryTimer = 0;
 
+  if ("scrollRestoration" in window.history) window.history.scrollRestoration = "manual";
+
+  function resetInitialScrollPosition() {
+    if (anchorScrollSequence || window.location.hash) return;
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }
+
+  resetInitialScrollPosition();
+  window.addEventListener("pageshow", () => {
+    window.requestAnimationFrame(() => window.requestAnimationFrame(resetInitialScrollPosition));
+  }, { once: true });
+
   document.querySelectorAll("[data-discovery-link]").forEach((link) => { link.href = discoveryUrl; });
 
   function postToShell(message) {
@@ -229,9 +241,17 @@
     if (!heroStage) return;
     const viewportWidth = document.documentElement.clientWidth;
     if (viewportWidth <= 767) {
-      const scale = Math.min(0.4305556, Math.max(0.2, (viewportWidth - 16) / 1068));
+      const heroSideGutter = 32;
+      const heroArtworkLeft = 112;
+      const heroArtworkRight = 1385;
+      const heroArtworkCenterOffset = (heroArtworkLeft + heroArtworkRight) / 2 - 720;
+      const scale = Math.min(0.4305556, Math.max(0.16, (viewportWidth - heroSideGutter * 2) / (heroArtworkRight - heroArtworkLeft)));
       heroStage.style.setProperty("--hero-mobile-scale", String(scale));
-    } else heroStage.style.removeProperty("--hero-mobile-scale");
+      heroStage.style.setProperty("--hero-mobile-offset", `${heroArtworkCenterOffset * scale}px`);
+    } else {
+      heroStage.style.removeProperty("--hero-mobile-scale");
+      heroStage.style.removeProperty("--hero-mobile-offset");
+    }
   }
   updateHeroMobileScale();
   let scrollFrame = 0;

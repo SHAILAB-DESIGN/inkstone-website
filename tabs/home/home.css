@@ -424,7 +424,7 @@ body.home-page > main { padding-top: 69px; }
   :root { --home-gutter: 0px; --home-section-pad: 52px; }
   .standalone-header { grid-template-columns: 1fr auto; padding-inline: 12px; }.standalone-brand { margin: 0; }.standalone-nav { display: none; }.standalone-header > .btn-primary { margin: 0; }
   .home-rail { border-inline: 0; }.section-content { padding-inline: 20px; }.section-heading, .section-heading.compact { margin-bottom: 38px; }.section-heading h2, .downloads-heading h2 { font-size: 34px; }.section-heading p, .downloads-heading p { font-size: 15px; }
-  .hero-section { min-height: 940px; }.hero-introduction { height: 420px; padding-top: 64px; }.hero-eyebrow { margin-bottom: 28px; font-size: 11px; }.hero-introduction h1 { font-size: clamp(40px, 11vw, 54px); line-height: 1.16; letter-spacing: 0; white-space: normal; }.hero-introduction p { margin-block: 26px; font-size: 15px; line-height: 1.65; }.hero-stage { top: 420px; width: 1440px; height: 860px; transform: translateX(-50%) scale(var(--hero-mobile-scale, .4305556)); transform-origin: top center; }
+  .hero-section { min-height: 940px; }.hero-introduction { height: 420px; padding-top: 64px; }.hero-eyebrow { margin-bottom: 28px; font-size: 11px; }.hero-introduction h1 { font-size: clamp(40px, 11vw, 54px); line-height: 1.16; letter-spacing: 0; white-space: normal; }.hero-introduction p { margin-block: 26px; font-size: 15px; line-height: 1.65; }.hero-stage { top: 420px; left: calc(50% - var(--hero-mobile-offset, 0px)); width: 1440px; height: 860px; transform: translateX(-50%) scale(var(--hero-mobile-scale, .4305556)); transform-origin: top center; }
   .feature-grid { grid-template-columns: 1fr; gap: 24px; }
   .feature-card { min-height: 200px; }
   .feature-card > div { padding-top: 80px; }
@@ -433,6 +433,7 @@ body.home-page > main { padding-top: 69px; }
   .security-section .section-content { padding-inline: 20px; }
   .discipline-layout { display: block; }.subject-orbit { width: 360px; height: 360px; margin: 0 auto 40px; transform: scale(.8); }.discipline-streams { margin-inline: 0; }.discipline-stream h3 { padding-inline: 0; }.discipline-card-row { height: auto; grid-template-columns: 1fr; }.discipline-card-row > .app-card, .discipline-card-row > .data-card, .discipline-card-row > .tool-card { width: 100%; }
   .output-collage { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }.output-wide { grid-column: span 2; grid-row: auto; min-height: 430px; }.output-card:not(.output-wide) { min-height: 190px; }
+  .evidence-section .section-content { min-height: auto; padding-bottom: 40px; }
   .evidence-layout { grid-template-columns: 1fr; gap: 8px; }
   .evidence-tabs { display: flex; overflow-x: auto; padding-bottom: 2px; flex-direction: row; gap: 8px; scrollbar-width: none; -ms-overflow-style: none; }
   .evidence-tabs::-webkit-scrollbar { display: none; width: 0; height: 0; }
