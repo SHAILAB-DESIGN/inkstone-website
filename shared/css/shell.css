@@ -10,7 +10,8 @@
 }
 
 .site-header {
-  position: relative;
+  position: fixed;
+  inset: 0 0 auto;
   z-index: 100;
   display: grid;
   height: var(--site-header-height);
@@ -62,7 +63,9 @@
 .site-header .site-menu-button { display: none; justify-self: end; margin-right: 12px; }
 
 .site-main {
-  height: calc(100vh - var(--site-header-height));
+  position: fixed;
+  inset: var(--site-header-height) 0 0;
+  height: auto;
   overflow: hidden;
 }
 

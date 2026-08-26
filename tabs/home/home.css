@@ -12,8 +12,8 @@ button, input, textarea { font: inherit; }
 img { max-width: 100%; }
 
 .standalone-header {
-  position: sticky;
-  top: 0;
+  position: fixed;
+  inset: 0 0 auto;
   z-index: 100;
   display: grid;
   height: 69px;
@@ -24,6 +24,8 @@ img { max-width: 100%; }
   backdrop-filter: blur(16px);
 }
 .is-embedded .standalone-header { display: none; }
+body.home-page > main { padding-top: 69px; }
+.is-embedded body.home-page > main { padding-top: 0; }
 .standalone-brand { width: 144px; margin-left: 20px; padding: 8px 12px; border: 0; background: none; cursor: pointer; }
 .standalone-brand img { display: block; }
 .standalone-nav { display: flex; gap: 4px; }
