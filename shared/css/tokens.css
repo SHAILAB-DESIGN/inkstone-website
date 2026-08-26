@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "InkStone Han Serif SC Home";
-  src: url("../assets/fonts/source-han-serif-sc/inkstone-han-serif-sc-home-600.woff2") format("woff2");
+  src: url("../assets/fonts/source-han-serif-sc/inkstone-han-serif-sc-home-600.woff2?v=20260825-font2") format("woff2");
   font-style: normal;
   font-weight: 600;
   font-display: swap;
@@ -16,7 +16,39 @@
 
 @font-face {
   font-family: "InkStone Han Serif SC Home";
-  src: url("../assets/fonts/source-han-serif-sc/inkstone-han-serif-sc-home-700.woff2") format("woff2");
+  src: url("../assets/fonts/source-han-serif-sc/inkstone-han-serif-sc-home-700.woff2?v=20260825-font2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "InkStone Han Serif SC Common";
+  src: url("../assets/fonts/source-han-serif-sc/inkstone-han-serif-sc-common-600.woff2?v=20260825-font2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "InkStone Han Serif SC Common";
+  src: url("../assets/fonts/source-han-serif-sc/inkstone-han-serif-sc-common-700.woff2?v=20260825-font2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "InkStone Han Serif SC Extended";
+  src: url("../assets/fonts/source-han-serif-sc/inkstone-han-serif-sc-extended-600.woff2?v=20260825-font2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "InkStone Han Serif SC Extended";
+  src: url("../assets/fonts/source-han-serif-sc/inkstone-han-serif-sc-extended-700.woff2?v=20260825-font2") format("woff2");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -72,7 +104,7 @@
   /* Project font-family baseline copied from the approved reference project. */
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Noto Sans SC", sans-serif;
   --font-serif: "Cormorant Garamond", "Noto Serif SC", serif;
-  --font-serif-cjk: "InkStone Han Serif SC Home", "Source Han Serif SC", "Noto Serif SC", serif;
+  --font-serif-cjk: "InkStone Han Serif SC Home", "InkStone Han Serif SC Common", "InkStone Han Serif SC Extended", "Source Han Serif SC", "Noto Serif SC", serif;
 
   /*
    * Responsive code tokens. These are not Figma Variables.

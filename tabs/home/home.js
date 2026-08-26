@@ -181,30 +181,6 @@
   if (workflow) revealObserver.observe(workflow);
   if (disciplines) revealObserver.observe(disciplines);
 
-  /* Duplicate the six-card set, then animate by the measured first-set width for a gap-safe seamless loop. */
-  document.querySelectorAll("[data-resource-track]").forEach((track) => {
-    const sourceCards = Array.from(track.children);
-    sourceCards.forEach((sourceCard) => {
-      const clone = sourceCard.cloneNode(true);
-      clone.setAttribute("aria-hidden", "true");
-      track.append(clone);
-    });
-    const updateResourceMarquee = () => {
-      const firstClone = track.children[sourceCards.length];
-      if (!firstClone) return;
-      const loopDistance = firstClone.offsetLeft;
-      const pixelsPerSecond = Number(track.dataset.resourceSpeed || 22);
-      if (loopDistance <= 0 || pixelsPerSecond <= 0) return;
-      track.style.setProperty("--marquee-offset", `${-loopDistance}px`);
-      track.style.setProperty("--resource-duration", `${loopDistance / pixelsPerSecond}s`);
-    };
-    updateResourceMarquee();
-    if ("ResizeObserver" in window) {
-      const resourceResizeObserver = new ResizeObserver(updateResourceMarquee);
-      resourceResizeObserver.observe(track);
-    } else window.addEventListener("resize", updateResourceMarquee, { passive: true });
-  });
-
   const partnerData = window.HomePartnerLogos || { line1: [], line2: [], line3: [] };
   const partnerPixelsPerSecond = 22;
   document.querySelectorAll("[data-partner-line]").forEach((track) => {
@@ -247,7 +223,17 @@
 
   /* Shared scroll frame: hero exit, shallow image parallax, and section state. */
   const introduction = document.querySelector("[data-hero-introduction]");
+  const heroStage = document.querySelector("[data-hero-stage]");
   const parallaxItems = Array.from(document.querySelectorAll("[data-parallax-speed]"));
+  function updateHeroMobileScale() {
+    if (!heroStage) return;
+    const viewportWidth = document.documentElement.clientWidth;
+    if (viewportWidth <= 767) {
+      const scale = Math.min(0.4305556, Math.max(0.2, (viewportWidth - 16) / 1068));
+      heroStage.style.setProperty("--hero-mobile-scale", String(scale));
+    } else heroStage.style.removeProperty("--hero-mobile-scale");
+  }
+  updateHeroMobileScale();
   let scrollFrame = 0;
   function updateScrollEffects() {
     scrollFrame = 0;
@@ -281,7 +267,10 @@
     if (!scrollFrame) scrollFrame = requestAnimationFrame(updateScrollEffects);
   }
   addEventListener("scroll", requestScrollUpdate, { passive: true });
-  addEventListener("resize", requestScrollUpdate, { passive: true });
+  addEventListener("resize", () => {
+    updateHeroMobileScale();
+    requestScrollUpdate();
+  }, { passive: true });
   reducedMotion.addEventListener?.("change", requestScrollUpdate);
   updateScrollEffects();
 
@@ -363,31 +352,124 @@
   const caseMobileQuery = window.matchMedia("(max-width: 767px)");
   let activeCase = 0;
   let caseRenderTimer = 0;
+  let caseEnterFrame = 0;
+  let caseSwipeState = null;
+  let caseSwipeLockedUntil = 0;
 
   function syncCaseTabsOrientation() {
     caseTabs?.setAttribute("aria-orientation", caseMobileQuery.matches ? "horizontal" : "vertical");
   }
 
-  function renderCase(index, focusTab = false) {
+  function resetCaseMotion() {
+    window.cancelAnimationFrame(caseEnterFrame);
+    caseDetail?.classList.remove(
+      "is-switching",
+      "is-dragging",
+      "is-snapping-back",
+      "is-slide-out-left",
+      "is-slide-out-right",
+      "is-slide-in-left",
+      "is-slide-in-right"
+    );
+    caseDetail?.style.removeProperty("--case-swipe-x");
+  }
+
+  function renderCase(index, focusTab = false, requestedDirection = 0) {
     if (!caseData.length || !caseDetail) return;
     window.clearTimeout(caseRenderTimer);
+    const previousCase = activeCase;
     activeCase = (index + caseData.length) % caseData.length;
     const item = caseData[activeCase];
+    const slideDirection = caseMobileQuery.matches && activeCase !== previousCase
+      ? (requestedDirection || Math.sign(activeCase - previousCase))
+      : 0;
+    if (slideDirection && !reducedMotion.matches) caseSwipeLockedUntil = performance.now() + 500;
     caseTabs.querySelectorAll(".case-tab").forEach((tab, tabIndex) => {
       const active = tabIndex === activeCase;
       tab.classList.toggle("is-active", active);
       tab.setAttribute("aria-selected", String(active));
       tab.tabIndex = active ? 0 : -1;
       if (active) caseDetail.setAttribute("aria-labelledby", tab.id);
-      if (active && focusTab) { tab.focus(); tab.scrollIntoView({ block: "nearest", inline: "nearest" }); }
+      if (active && focusTab) tab.focus();
+      if (active && (focusTab || slideDirection)) tab.scrollIntoView({ behavior: reducedMotion.matches ? "auto" : "smooth", block: "nearest", inline: "center" });
     });
-    caseDetail.classList.add("is-switching");
+    resetCaseMotion();
+    caseDetail.classList.add(slideDirection > 0 ? "is-slide-out-left" : slideDirection < 0 ? "is-slide-out-right" : "is-switching");
     const update = () => {
       caseDetail.innerHTML = `<div class="case-copy"><span class="case-field">${item.primaryField} · ${item.secondaryField}</span><h3>${item.title}</h3><p>${item.highlight}</p></div><div class="case-media"><img src="${item.image}" alt="${item.imageAlt}" decoding="async" ${activeCase ? 'loading="lazy"' : ""}></div><dl class="case-meta"><div><dt>联合单位：</dt><dd>${item.partners}</dd></div></dl>`;
-      caseDetail.classList.remove("is-switching");
+      resetCaseMotion();
+      if (!slideDirection || reducedMotion.matches) return;
+      caseDetail.classList.add(slideDirection > 0 ? "is-slide-in-right" : "is-slide-in-left");
+      caseEnterFrame = window.requestAnimationFrame(() => {
+        caseEnterFrame = window.requestAnimationFrame(() => {
+          caseDetail.classList.remove("is-slide-in-left", "is-slide-in-right");
+        });
+      });
     };
     if (reducedMotion.matches) update();
-    else caseRenderTimer = window.setTimeout(update, 150);
+    else caseRenderTimer = window.setTimeout(update, slideDirection ? 220 : 150);
+  }
+
+  function finishCaseSwipe(event, cancelled = false) {
+    if (!caseSwipeState || event.pointerId !== caseSwipeState.pointerId) return;
+    const state = caseSwipeState;
+    caseSwipeState = null;
+    if (caseDetail.hasPointerCapture?.(event.pointerId)) caseDetail.releasePointerCapture(event.pointerId);
+
+    const elapsed = Math.max(performance.now() - state.startedAt, 1);
+    const velocity = state.deltaX / elapsed;
+    const threshold = Math.min(96, caseDetail.clientWidth * 0.2);
+    const shouldChange = !cancelled && state.axis === "x" && (Math.abs(state.deltaX) >= threshold || Math.abs(velocity) >= 0.55);
+    const direction = state.deltaX < 0 ? 1 : -1;
+    const nextCase = activeCase + direction;
+
+    if (shouldChange && nextCase >= 0 && nextCase < caseData.length) {
+      resetCaseMotion();
+      renderCase(nextCase, false, direction);
+      return;
+    }
+
+    caseDetail.classList.remove("is-dragging");
+    caseDetail.classList.add("is-snapping-back");
+    caseDetail.style.setProperty("--case-swipe-x", "0px");
+    window.setTimeout(() => resetCaseMotion(), reducedMotion.matches ? 0 : 260);
+  }
+
+  function bindCaseSwipe() {
+    if (!caseDetail) return;
+    caseDetail.addEventListener("pointerdown", (event) => {
+      if (!caseMobileQuery.matches || !event.isPrimary || performance.now() < caseSwipeLockedUntil) return;
+      window.clearTimeout(caseRenderTimer);
+      resetCaseMotion();
+      caseSwipeState = {
+        pointerId: event.pointerId,
+        startX: event.clientX,
+        startY: event.clientY,
+        deltaX: 0,
+        axis: "",
+        startedAt: performance.now()
+      };
+      caseDetail.setPointerCapture?.(event.pointerId);
+    });
+
+    caseDetail.addEventListener("pointermove", (event) => {
+      if (!caseSwipeState || event.pointerId !== caseSwipeState.pointerId) return;
+      const deltaX = event.clientX - caseSwipeState.startX;
+      const deltaY = event.clientY - caseSwipeState.startY;
+      if (!caseSwipeState.axis && Math.max(Math.abs(deltaX), Math.abs(deltaY)) >= 8) {
+        caseSwipeState.axis = Math.abs(deltaX) > Math.abs(deltaY) * 1.15 ? "x" : "y";
+      }
+      if (caseSwipeState.axis !== "x") return;
+      event.preventDefault();
+      const atStart = activeCase === 0 && deltaX > 0;
+      const atEnd = activeCase === caseData.length - 1 && deltaX < 0;
+      caseSwipeState.deltaX = (atStart || atEnd) ? deltaX * 0.24 : deltaX;
+      caseDetail.classList.add("is-dragging");
+      caseDetail.style.setProperty("--case-swipe-x", `${caseSwipeState.deltaX}px`);
+    });
+
+    caseDetail.addEventListener("pointerup", (event) => finishCaseSwipe(event));
+    caseDetail.addEventListener("pointercancel", (event) => finishCaseSwipe(event, true));
   }
 
   if (caseTabs && caseData.length) {
@@ -418,6 +500,7 @@
     caseDetail.setAttribute("aria-labelledby", `case-tab-${caseData[0].id}`);
     syncCaseTabsOrientation();
     caseMobileQuery.addEventListener?.("change", syncCaseTabsOrientation);
+    bindCaseSwipe();
   }
 
   const localCooperationDialog = document.getElementById("home-local-cooperation-dialog");
