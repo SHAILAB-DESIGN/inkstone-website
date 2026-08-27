@@ -9,6 +9,7 @@
   const messageTargetOrigin = isLocalFileContext ? "*" : window.location.origin;
   const allowedAnchors = new Set(["home-hero", "home-advantages", "home-workflow", "home-research-foundation", "home-research-cases", "home-cooperation", "home-downloads"]);
   const navigationAnchorBySection = new Map([
+    ["home-hero", ""],
     ["home-advantages", "home-advantages"],
     ["home-workflow", "home-advantages"],
     ["home-disciplines", "home-advantages"],
@@ -168,7 +169,7 @@
   const evidenceScaler = document.querySelector("[data-evidence-scaler]");
   if (evidenceScaler) {
     const resizeEvidence = () => {
-      const scale = Math.min(1, evidenceScaler.clientWidth / 800);
+      const scale = Math.min(1.2, evidenceScaler.clientWidth / 800);
       evidenceScaler.style.setProperty("--evidence-scale", scale);
       evidenceScaler.style.height = `${480 * scale}px`;
     };
@@ -300,7 +301,7 @@
     const visible = Array.from(sectionEntries.values()).filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
     if (!visible) return;
     const navigationAnchorId = navigationAnchorBySection.get(visible.target.id);
-    if (!navigationAnchorId) return;
+    if (navigationAnchorId === undefined) return;
     setStandaloneActiveAnchor(navigationAnchorId);
     if (embedded) postToShell({ type: "home:section:active", anchorId: navigationAnchorId });
   }, { rootMargin: "-28% 0px -60%", threshold: [0, .1, .3, .6] });

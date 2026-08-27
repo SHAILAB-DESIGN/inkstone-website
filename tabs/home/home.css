@@ -354,7 +354,7 @@ body.home-page > main { padding-top: 69px; }
   .evidence-layout {
     grid-template-columns: 280px minmax(0, 1fr);
     gap: 40px;
-    align-items: start;
+    align-items: center;
     padding-left: clamp(4px, calc(100% - 1280px), 120px);
   }
   .evidence-panel { min-height: 390px; }

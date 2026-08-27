@@ -220,7 +220,7 @@
     if (messageTargetOrigin !== "*" && event.origin !== messageTargetOrigin) return;
     if (event.data.type === "home:ready") {
       flushPendingAnchor();
-    } else if (event.data.type === "home:section:active" && allowedAnchors.has(event.data.anchorId)) {
+    } else if (event.data.type === "home:section:active" && (event.data.anchorId === "" || allowedAnchors.has(event.data.anchorId))) {
       setActiveAnchor(event.data.anchorId);
     } else if (event.data.type === "home:anchor:scrolled" && event.data.requestId === lastAnchorRequestId && allowedAnchors.has(event.data.anchorId)) {
       if (pendingAnchor?.requestId === event.data.requestId) pendingAnchor = null;
